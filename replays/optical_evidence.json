@@ -1,0 +1,185 @@
+{
+  "track": "optical",
+  "status": "FAIL",
+  "freeze_id": "CE-OPT-DISTINCT-DETECTORS-v1-2026-10-06",
+  "source": "Photonic hyperentanglement in polarisation and frequency via joint spectrum shaping",
+  "source_record": "18833943",
+  "observation_axis": "Optical delay position, not elapsed time",
+  "data_scope": "Recovered recorded results from the frozen distinct-detector test. Raw channel samples not recovered. These are aggregate comparisons, not a signal replay.",
+  "readiness": "6/6 files eligible,99rows each",
+  "rows_per_file": 99,
+  "surrogates_per_file_representation": 256,
+  "file_gate": 0.5,
+  "representation_gates": {
+    "median_drop_min": 0.5,
+    "q1_drop_min": 0.25,
+    "positive_fraction_min": 0.8,
+    "file_pass_fraction_min": 0.75
+  },
+  "all_representations_required": true,
+  "rows": [
+    {
+      "basis": "AA",
+      "representation": "raw",
+      "observed_cf": 0.316348898213248,
+      "surrogate_median": 0.2658021282878943,
+      "drop": 0.1597817163607775,
+      "file_pass": false
+    },
+    {
+      "basis": "AA",
+      "representation": "global_sum_normalized",
+      "observed_cf": 0.1259306551657123,
+      "surrogate_median": 0.1572763512325799,
+      "drop": -0.2489123559757533,
+      "file_pass": false
+    },
+    {
+      "basis": "AA",
+      "representation": "pair_normalized",
+      "observed_cf": 0.3333333333333333,
+      "surrogate_median": 0.3333333333333333,
+      "drop": 0,
+      "file_pass": false
+    },
+    {
+      "basis": "DA",
+      "representation": "raw",
+      "observed_cf": 0.3752760845568487,
+      "surrogate_median": 0.2454155265298221,
+      "drop": 0.3460400578959746,
+      "file_pass": false
+    },
+    {
+      "basis": "DA",
+      "representation": "global_sum_normalized",
+      "observed_cf": 0.1133136702323552,
+      "surrogate_median": 0.168025800143049,
+      "drop": -0.482837858825893,
+      "file_pass": false
+    },
+    {
+      "basis": "DA",
+      "representation": "pair_normalized",
+      "observed_cf": 0.3333333333333332,
+      "surrogate_median": 0.3333333333333333,
+      "drop": -2.220446049250313e-16,
+      "file_pass": false
+    },
+    {
+      "basis": "DD",
+      "representation": "raw",
+      "observed_cf": 0.3706265738272571,
+      "surrogate_median": 0.2484420564086679,
+      "drop": 0.3296701479250579,
+      "file_pass": false
+    },
+    {
+      "basis": "DD",
+      "representation": "global_sum_normalized",
+      "observed_cf": 0.1225122143728516,
+      "surrogate_median": 0.1627395900930187,
+      "drop": -0.3283540006691887,
+      "file_pass": false
+    },
+    {
+      "basis": "DD",
+      "representation": "pair_normalized",
+      "observed_cf": 0.3333333333333332,
+      "surrogate_median": 0.3333333333333333,
+      "drop": -2.220446049250313e-16,
+      "file_pass": false
+    },
+    {
+      "basis": "HH",
+      "representation": "raw",
+      "observed_cf": 0.3040886880012995,
+      "surrogate_median": 0.2286139335949601,
+      "drop": 0.2481998094122358,
+      "file_pass": false
+    },
+    {
+      "basis": "HH",
+      "representation": "global_sum_normalized",
+      "observed_cf": 0.1902628501386668,
+      "surrogate_median": 0.1955758228835321,
+      "drop": -0.0279243832466142,
+      "file_pass": false
+    },
+    {
+      "basis": "HH",
+      "representation": "pair_normalized",
+      "observed_cf": 0.3333333333333334,
+      "surrogate_median": 0.3333333333333333,
+      "drop": 3.3306690738754696e-16,
+      "file_pass": false
+    },
+    {
+      "basis": "HV",
+      "representation": "raw",
+      "observed_cf": 0.257732580856886,
+      "surrogate_median": 0.2472296231079002,
+      "drop": 0.0407513777034571,
+      "file_pass": false
+    },
+    {
+      "basis": "HV",
+      "representation": "global_sum_normalized",
+      "observed_cf": 0.1627522815044141,
+      "surrogate_median": 0.1867041094624064,
+      "drop": -0.1471673867585241,
+      "file_pass": false
+    },
+    {
+      "basis": "HV",
+      "representation": "pair_normalized",
+      "observed_cf": 0.3333333333333333,
+      "surrogate_median": 0.3333333333333333,
+      "drop": 0,
+      "file_pass": false
+    },
+    {
+      "basis": "VV",
+      "representation": "raw",
+      "observed_cf": 0.3056973503118915,
+      "surrogate_median": 0.2452339848618641,
+      "drop": 0.1977883203381999,
+      "file_pass": false
+    },
+    {
+      "basis": "VV",
+      "representation": "global_sum_normalized",
+      "observed_cf": 0.175677292486414,
+      "surrogate_median": 0.1893046629536909,
+      "drop": -0.0775704718259522,
+      "file_pass": false
+    },
+    {
+      "basis": "VV",
+      "representation": "pair_normalized",
+      "observed_cf": 0.3333333333333333,
+      "surrogate_median": 0.3333333333333333,
+      "drop": 0,
+      "file_pass": false
+    }
+  ],
+  "explanation": {
+    "raw": "All six files had positive alignment sensitivity, but none reached the frozen 50% disappearance gate.",
+    "global_sum_normalized": "Removing global total count eliminated the apparent alignment advantage. Median disappearance became negative.",
+    "pair_normalized": "Complementary normalized pairs yield approximately one third both before and after desynchronization. This control is degenerate and remains in the failed result."
+  },
+  "not_supported": [
+    "Intensity-independent simultaneous optical cofluctuation replication",
+    "Universal cross-modality relational observable",
+    "Equivalence to full Coherence Engine state"
+  ],
+  "freeze_manifest_sha256": "2b1e817274549119672bfdb54a32056d9f55ac2aa7e39ed7af207b73c4e61486",
+  "max_raw_marginal_numeric_difference": 1.8189894035458565e-12,
+  "marginal_tolerance": 1e-9,
+  "provenance": {
+    "results_library_id": "libfile_97604af152e48191a41244c5fbca3f26",
+    "results_version": "2",
+    "report_library_id": "libfile_2c6a661b4b3881918d55f551be394ed1",
+    "raw_recovery": "Archive transfer blocked HTTP403"
+  }
+}
