@@ -7,7 +7,7 @@ function nasa(){let ds=filter.value==='all'?'FD002':filter.value;section.innerHT
 function draw(){const ds=document.getElementById('dataset').value,h=document.getElementById('horizon').value,m=document.getElementById('metric').value;const rows=Object.entries(DATA.nasa).filter(([k])=>k.includes(ds)).flatMap(([k,v])=>v).filter(r=>String(r['RUL horizon'])===h).map(r=>({label:r.Method,value:+r[m]}));document.getElementById('nasabars').innerHTML=bars(rows,'value',Math.max(...rows.map(r=>r.value),1));const ordered=[...rows].sort((a,b)=>m==='False alerts / engine'?a.value-b.value:b.value-a.value);document.getElementById('nasainsight').textContent=ordered[0].label+' has the '+(m==='False alerts / engine'?'lowest':'highest')+' '+m+' at this horizon. Switch metrics to inspect the tradeoffs.';}
 ['dataset','horizon','metric'].forEach(k=>document.getElementById(k).onchange=draw);draw();}
 function fallback(id){section.innerHTML='<h2>'+escape(id)+' evidence</h2><p>Recovering the original evidence for this view.</p>';}
-function render(id){document.getElementById('result').parentElement.hidden=true;if(id==='nasa')nasa();else if(evidence[id]&&window['render_'+id.replace('-','_')])window['render_'+id.replace('-','_')](evidence[id],section,bars,fmt,escape);else fallback(id);}
-async function load(){for(const id of ['fraud','ecg','uci-power','optical']){try{const r=await fetch(id+'_evidence.json');if(r.ok)evidence[id]=await r.json()}catch(e){}}AHA.refresh();}
+function render(id){document.getElementById('result').parentElement.hidden=true;if(id==='nasa')nasa();else if(evidence[id]&&window['render_'+id.replaceAll('-','_')])window['render_'+id.replaceAll('-','_')](evidence[id],section,bars,fmt,escape);else fallback(id);}
+async function load(){for(const id of ['fraud','ecg','uci-power','optical','training-free-ai']){try{const r=await fetch(id+'_evidence.json');if(r.ok)evidence[id]=await r.json()}catch(e){}}AHA.refresh();}
 return {render,load};})();
 TRACKS.load();
