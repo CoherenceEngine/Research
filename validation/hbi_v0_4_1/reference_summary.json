@@ -1,0 +1,7 @@
+{
+  "status": "LOCKED_HOLDOUT_PRIOR_REPORTED_RESULT_REQUIRES_REPLICATION",
+  "cases": 72,
+  "bellman": {"survival": "72/72", "violations": 0, "mean_modeled_energy": 80.230, "mean_command_events": 47.986, "mean_active_steps": 47.653},
+  "event_v0_4_1": {"survival": "72/72", "violations": 0, "mean_modeled_energy": 63.997, "mean_command_events": 5.764, "mean_active_steps": 18.361},
+  "reported_reductions_percent": {"modeled_energy": 20.2, "command_events": 88.0, "active_steps": 61.5}
+}
