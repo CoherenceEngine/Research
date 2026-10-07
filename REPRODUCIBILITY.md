@@ -1,6 +1,6 @@
 # Reproduction and access limits
 
-This initial release is a documentation and evidence-summary repository. It contains no executable engine, independent evaluation harness, raw telemetry, or complete historical benchmark bundles.
+The repository includes documentation, evidence summaries, and an executable Scania decision-ledger audit at validation/scania_v1/. It contains no executable engine, raw telemetry, or complete saved-model replay bundle. The scorer can reproduce archived confusion matrices, costs, and recorded call counts, but cannot prove model execution or data provenance.
 
 Readers can inspect the reported outcomes and compare implementation boundaries. They cannot independently reproduce private engine outputs from these files alone. Source summaries are internal records, not external validations.
 
