@@ -1,19 +1,23 @@
 {
   "date": "2026-10-07",
   "files": {
-    "README.md": "16d1a3a884c3da2249ed2614b5b92a7d7504c380ca2da5bcca83a3470aa31d3b",
-    "check_replays.py": "65bf91fed0e82bf0c26b2a6de697c7a33e11eab8d339c9749da4d00e5bbc6cba",
-    "coverage.json": "bfc633fb7bb305e1a4c342e6acc8809c8ba503de1081ff4d17af46b6d5447eb8",
-    "hbi_per_scenario.csv": "38e9785ed58fde22f4799a6f6539709e69fb64d006364557bc2678a77322543d",
-    "hbi_summary.json": "dd69fa8a45f58283ab935b2427207c26e38dfb428ab9db85bd7a1838af22b786",
-    "model_family_aggregate.csv": "d4ddaab195e3dcdd0d732efff67fc2a92c7e0e3e261ff0ed1da7fbfc910c34fa",
-    "nasa_CMAPSS_FD002_CE_vs_EWMA_bootstrap_v1.csv": "1b94add383d07b1f5bf3d4e3acb5d3d21d43843c01e9b645d8cac6bc45852767",
-    "nasa_CMAPSS_FD002_external_results_v1.csv": "3b11dde90af6badbf0e2ea7f47da6d59b78a98046f89f50867c5af26316765bb",
-    "nasa_CMAPSS_FD003_bootstrap_v1.csv": "b27677a7591a8ab8bffbb49d7028f5a1ed2089cc2e8a5349510d7ba8299d292a",
-    "nasa_CMAPSS_FD003_external_results_v1.csv": "f55ac42f00206bd537e9dd073939acb53d05e347556a0b1c1ef117b653119892",
-    "nasa_CMAPSS_FD004_bootstrap_v1.csv": "dfb65eb52477092a1b9c67b828ad9bb5e53b360b58a03d23c9aaa2b6d4dd9d7f",
     "nasa_CMAPSS_FD004_external_results_v1.csv": "d30a6174fd4ac10009468630d9b1230c5c22d81cae692991ecd9b5d2386a7092",
+    "decode_viewer_data.py": "706cd8437aefe3988d4d224e65f6ed4a2dadc0b2e7d8c9eb8b1d1ab442ea3239",
+    "scania_decisions.json.gz.b64": "f519854fa712000af1228119eefbaffdeb531d63d4053ba95529a096897db385",
+    "README.md": "d5aabde4d0946c098fb72cb8ff510461742f03a1190154f9b8c84c8a89f3e75b",
     "scania_local_replay_receipt.json": "98eecfc12aa58f3d09dfad65de96a7c2399a9c05b5bb76ae3ad020f3b992422c",
-    "viewer.html": "995f6cd403ced869dedd704c55e973e5d2d2deda86fc78d3fedff1085d787a70"
+    "nasa_CMAPSS_FD003_external_results_v1.csv": "f55ac42f00206bd537e9dd073939acb53d05e347556a0b1c1ef117b653119892",
+    "model_family_aggregate.csv": "d4ddaab195e3dcdd0d732efff67fc2a92c7e0e3e261ff0ed1da7fbfc910c34fa",
+    "aha.js": "9f19271e46b3dc1a9b0882bb500fb2d7686f8326d9d178e4ecae88b8ddb9d26b",
+    "coverage.json": "bfc633fb7bb305e1a4c342e6acc8809c8ba503de1081ff4d17af46b6d5447eb8",
+    "nasa_CMAPSS_FD004_bootstrap_v1.csv": "dfb65eb52477092a1b9c67b828ad9bb5e53b360b58a03d23c9aaa2b6d4dd9d7f",
+    "nasa_CMAPSS_FD002_CE_vs_EWMA_bootstrap_v1.csv": "1b94add383d07b1f5bf3d4e3acb5d3d21d43843c01e9b645d8cac6bc45852767",
+    "hbi_summary.json": "dd69fa8a45f58283ab935b2427207c26e38dfb428ab9db85bd7a1838af22b786",
+    "nasa_CMAPSS_FD003_bootstrap_v1.csv": "b27677a7591a8ab8bffbb49d7028f5a1ed2089cc2e8a5349510d7ba8299d292a",
+    "check_replays.py": "65bf91fed0e82bf0c26b2a6de697c7a33e11eab8d339c9749da4d00e5bbc6cba",
+    "hbi_per_scenario.csv": "38e9785ed58fde22f4799a6f6539709e69fb64d006364557bc2678a77322543d",
+    "viewer.html": "9d6a1f73bc4350844848e461ea57dd3871220008615c0b15f56afbc9c20c028f",
+    "hbi_trajectories.json.gz.b64": "4622e70bc7a2f67ed12108fba513628a9ca9aefe933c7a919b8ee0a6320df972",
+    "nasa_CMAPSS_FD002_external_results_v1.csv": "3b11dde90af6badbf0e2ea7f47da6d59b78a98046f89f50867c5af26316765bb"
   }
 }
