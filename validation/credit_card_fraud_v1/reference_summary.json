@@ -1,0 +1,6 @@
+{
+  "coherence_f1_approx": 0.557,
+  "coherence_recall_percent_approx": 88.7,
+  "variance_f1_approx": 0.003,
+  "variance_recall_percent_approx": 0.2
+}
