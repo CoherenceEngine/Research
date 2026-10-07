@@ -82,7 +82,7 @@
     {
       "id": "owner_core_v0.1_fd001",
       "title": "Exact owner Core v0.1 \u00b7 FD001,100engines,5fold engine holdout",
-      "scope": "Private owner core unchanged, archived execution. FD001,100engines,5fold engine holdout. Alert burden is premature episodes, not windows; F1 is sample-level.",
+      "scope": "Private owner core unchanged, archived execution. FD001,100engines,5fold engine holdout. Alert burden is premature episodes, not windows; F1 is sample-level. Unchanged exact owner core rerun: all row and event outputs byte-identical to archive.",
       "rows": [
         {
           "label": "Exact owner Core v0.1",
@@ -210,6 +210,19 @@
       "engines": 249,
       "observations": 61249,
       "outside_reviewer_execution": false
+    },
+    "owner_core": {
+      "scope": "Local reproduction of exact frozen private owner core, not new independent validation",
+      "source_hash_verified": true,
+      "core_source_sha256": "56f92064dae573ea161191e1a89b90f0fd192f26d77532b1e9501b029d259e2b",
+      "dataset_sha256": "963b5e22825b34d8b21c69e1aeb4af3e647050eb672ee8834ba4b5d91d2de0f8",
+      "method_modified": false,
+      "status": "MIXED",
+      "metrics_match": true,
+      "output_matches": {
+        "ce_owner_core_v0_1_rows.csv": true,
+        "ce_owner_core_v0_1_events.csv": true
+      }
     }
   },
   "archives": {
