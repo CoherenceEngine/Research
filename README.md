@@ -1,5 +1,7 @@
 # The Coherence Engine™ Research
 
+### [Open the live interactive benchmark viewer](https://delta72-investor-research-atlas.allialli05.chatgpt.site/replays.html)
+
 Public research evidence and evaluation guidance by Allison Hensgen.
 
 The Coherence Engine™ is an implemented computational system developed to investigate coherence, drift, instability, and recovery in changing systems. This repository documents selected internal benchmark findings, their implementation boundaries, and limitations. It does not establish universal performance or independent replication.
