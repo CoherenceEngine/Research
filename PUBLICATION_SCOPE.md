@@ -13,3 +13,7 @@ No grant award, foundation endorsement, clinical authorization, NASA endorsement
 ## Scania audit addition
 
 The validation/scania_v1/ directory adds a decision-only ledger and executable audit. Its audit.py and test_audit.py are licensed under the scoped MIT LICENSE in that directory. The remaining repository does not receive a blanket open-source license. Probability columns and the proprietary engine are excluded. The local arithmetic audit passed; external reviewer execution remains pending.
+
+## Expanded portfolio addition
+
+The validation/ portfolio adds historical NASA receipt hashes, HBI rounded simulation means, nine-model aggregate outcomes, preliminary fraud/ECG summaries and a UCI ground-truth recovery protocol. validation/audit.py and validation/test_audit.py use validation/LICENSE, scoped MIT. No other code, evidence or protected engine receives that license. Research branches retain synthetic failures and exploratory observations separately. No new outside engine replication is established.
