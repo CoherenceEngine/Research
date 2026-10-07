@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-07",
+  "scope": "Recovered archived evidence, no new protected-engine execution",
+  "tracks": {
+    "fraud": {
+      "asset_sha256": "5ca8f745463fc2b1348e4ed22fbf1209387d4e1f0627aa5fa72bebf8b0289bf0",
+      "scope": "Archived chronological development scores, matched to SHA-verified public labels. Completed 500-transaction groups, not individual transaction detection. Public research implementation, not a new run of the private Coherence Engine. Previously studied dataset, not untouched holdout. Frozen thresholds retained."
+    },
+    "ecg": {
+      "asset_sha256": "28245a464d036fad6dcebe0f76a240f8b29ce25cd5aee31727e62c015c5ada7b",
+      "scope": "Two distinct historical experiments. Do not pool or substitute their metrics. Not clinical validation or a new execution."
+    },
+    "uci-power": {
+      "asset_sha256": "42f12392b010a559323ef2d4a3e090659925f601cbcea6d6c2d940af832962bb",
+      "scope": "Archived developer-reported monthly aggregates, not a rerun. No ground truth or timestamped alert outputs recovered. Alert counts do not establish detection accuracy. Monthly level bands describe archived aggregates, not biological or anomaly thresholds."
+    },
+    "optical": {
+      "asset_sha256": "ea9c85093b168b0fa43143869f6a895a78030514ac19e8f4d7a5d338236e8cc8",
+      "scope": "Recovered recorded results from the frozen distinct-detector test. Raw channel samples not recovered. These are aggregate comparisons, not a signal replay."
+    }
+  }
+}
