@@ -33,3 +33,7 @@ The proprietary engine implementation is not distributed here. No clinical effic
 Website: https://coherenceengine.org
 
 Copyright © 2026 Allison Hensgen. No blanket open-source or patent license is granted by this repository. See publication scope.
+
+## Runnable replay and simulation addition
+
+[Open the replay suite](replays/README.md) for the locally reproduced HBI 72-case simulation, exact Scania 16,000-decision saved-model replay receipt, six recovered NASA canonical output CSVs and a self-contained output viewer. Original executable HBI/controller artifacts and Scania model replay remain private. Other tracks retain explicit execution gaps.
