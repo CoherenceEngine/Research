@@ -1,0 +1,42 @@
+{
+  "package_id": "CE-INDEPENDENT-VALIDATION-SCANIA-v1-2026-10-07",
+  "rows": 16000,
+  "scope": "Archived decision audit, not engine replay",
+  "source_ledger_sha256": "cb4c7da50ace8991f3b3106f92d602b5f2622bd1d4da35b5bfd110c34361b875",
+  "released_csv_sha256": "967d24d50fe4a0308e5386bb5e1f6fdf70850bed4944171e9aecc8017a139399",
+  "released_gzip_sha256": "05d64eae41c08916fe1589ff5cbc255dc4f4e18cd56828a5f20c12268416c229",
+  "projection": [
+    "row_index",
+    "actual_failure",
+    "coherence_gate_calls_heavy",
+    "baseline_prediction",
+    "coherence_v2_prediction"
+  ],
+  "excluded_columns": [
+    "heavy_probability",
+    "coherence_gate_probability"
+  ],
+  "expected": {
+    "always_on": {
+      "fp": 841,
+      "fn": 6,
+      "tp": 369,
+      "tn": 14784,
+      "modeled_cost": 11410,
+      "heavy_calls": 16000
+    },
+    "gate_v2": {
+      "fp": 740,
+      "fn": 6,
+      "tp": 369,
+      "tn": 14885,
+      "modeled_cost": 10400,
+      "heavy_calls": 2292
+    }
+  },
+  "cost_weights": {
+    "false_positive": 10,
+    "false_negative": 500
+  },
+  "external_reviewer_receipt": "PENDING"
+}
