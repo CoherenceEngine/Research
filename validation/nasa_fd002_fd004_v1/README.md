@@ -21,3 +21,7 @@ Use [the shared reviewer report](../REVIEWER_REPORT.md). No outside reviewer has
 Atlas orientation: https://delta72-investor-research-atlas.allialli05.chatgpt.site/nasa.html
 
 Source repository paths and immutable Git blob identifiers are recorded in [portfolio_manifest.json](../portfolio_manifest.json). Private source access remains controlled. The summaries are historical developer records.
+
+## Recovery update, October 7, 2026
+
+The six canonical CSVs are now available in [replays/](../../replays/README.md), with a nasa_ filename prefix. All six hashes matched reference_receipt.json. Run `python replays/check_replays.py` from the repository root. Original experiment scripts and engine execution remain outside this public addition. This supersedes the missing-CSV status above, but does not establish a new engine rerun.
