@@ -1,0 +1,46 @@
+{
+  "rerun_date": "2026-09-19",
+  "status": "PASS_EXACT",
+  "scope": "NASA C-MAPSS FD002-FD004 prospectively locked held-out official-test reproduction",
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.8.0",
+    "scipy": "1.17.0",
+    "joblib": "1.5.3"
+  },
+  "source_archive_sha256": "bb97bc5e283c38b869b227fcfda17772148113dd90b4d6fe0277864fd23e6c1a",
+  "script_sha256": {
+    "fd002": "7d2b207c4e2ed6a9d6aa8f7587a05bb38164b5c4436bb59029151057adbbc57d",
+    "fd003": "292feb82a6aa28e5f002f526570c0c568184cc205ab241266aa6b112a635623e",
+    "fd004": "95e31a6b2b2c42df6214c64885d15232a660361c4ad8a98f6179be6556ee7a52"
+  },
+  "canonical_csvs_exact": true,
+  "canonical_result_hashes": {
+    "CMAPSS_FD002_external_results_v1.csv": "3b11dde90af6badbf0e2ea7f47da6d59b78a98046f89f50867c5af26316765bb",
+    "CMAPSS_FD002_CE_vs_EWMA_bootstrap_v1.csv": "1b94add383d07b1f5bf3d4e3acb5d3d21d43843c01e9b645d8cac6bc45852767",
+    "CMAPSS_FD003_external_results_v1.csv": "f55ac42f00206bd537e9dd073939acb53d05e347556a0b1c1ef117b653119892",
+    "CMAPSS_FD003_bootstrap_v1.csv": "b27677a7591a8ab8bffbb49d7028f5a1ed2089cc2e8a5349510d7ba8299d292a",
+    "CMAPSS_FD004_external_results_v1.csv": "d30a6174fd4ac10009468630d9b1230c5c22d81cae692991ecd9b5d2386a7092",
+    "CMAPSS_FD004_bootstrap_v1.csv": "dfb65eb52477092a1b9c67b828ad9bb5e53b360b58a03d23c9aaa2b6d4dd9d7f"
+  },
+  "summary": {
+    "ce_f1_above_ewma_horizons": "8 of 9",
+    "fd004_rul30": {
+      "ce_f1": 0.4624505928849174,
+      "ewma_f1": 0.3784786641925061,
+      "difference": 0.0839719286924113,
+      "bootstrap_95": [0.0256611182535995, 0.1480717695807919],
+      "ce_false_alerts_per_engine": 0.9094827586206896
+    },
+    "fd004_rul50": {
+      "ce_f1": 0.5599999999994997,
+      "ewma_f1": 0.4360515021454459,
+      "difference": 0.1239484978540537,
+      "bootstrap_95": [0.0694117648680459, 0.1815532213412218],
+      "ce_false_alerts_per_engine": 0.9870689655172412
+    }
+  },
+  "boundary": "PASS_EXACT means exact reproduction of the frozen external-test outputs. It does not mean CE beats every comparator at every horizon. FD001 remains method-development/history."
+}
