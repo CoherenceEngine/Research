@@ -1,0 +1,33 @@
+{
+  "status": "LEDGER_AUDIT_PASS",
+  "validation_scope": "decision-ledger arithmetic only",
+  "rows": 16000,
+  "released_csv_sha256": "967d24d50fe4a0308e5386bb5e1f6fdf70850bed4944171e9aecc8017a139399",
+  "metrics": {
+    "always_on": {
+      "tp": 369,
+      "tn": 14784,
+      "fp": 841,
+      "fn": 6,
+      "modeled_cost": 11410,
+      "heavy_calls": 16000,
+      "recall": 0.984
+    },
+    "gate_v2": {
+      "tp": 369,
+      "tn": 14885,
+      "fp": 740,
+      "fn": 6,
+      "modeled_cost": 10400,
+      "heavy_calls": 2292,
+      "recall": 0.984
+    }
+  },
+  "heavy_calls_avoided": 13708,
+  "heavy_call_reduction_pct": 85.675,
+  "newly_missed_rows": [],
+  "recovered_missed_rows": [],
+  "engine_executed": false,
+  "external_reviewer_execution": false,
+  "physical_energy_measured": false
+}
