@@ -39,3 +39,15 @@ HBI trajectories were captured by observing the unchanged original simulator; al
 - Optical: all 18 recorded basis/representation comparisons, preserving the frozen negative result. Raw channels remain unavailable; no waveform replay.
 
 Public recovery assets contain aggregate outputs or archived alert flags. Protected core implementation is excluded. See track_recovery_receipt.json for asset hashes and scope. These are recovered developer records, not third-party execution receipts.
+
+## Training-Free AI
+
+Dedicated experiment selector keeps the FD001 comparison, v6 FD002 transfer, v7 FD004 transfer, v8 development, exact owner Core v0.1, CMS11 reference and native reasoner separate.
+
+Executed locally, unchanged:
+- Public reference FD001 operator: summary and per-engine outputs matched archived bytes.
+- Private v6 FD002: all frozen decisions and metrics matched archived bytes, preserving FAIL and zero detections.
+- Private v7 FD004: all frozen decisions and metrics matched archived bytes, preserving NOT PROMOTED.
+- Exact private owner Core v0.1 on FD001: source hash verified; row and event outputs byte-identical, all summary metrics identical. Preserved MIXED status, 100% engine detection, sample F1 0.761962 and 3.86 premature alert episodes per engine.
+
+These are reproductions on previously examined data, not fresh independent or outside-reviewer validation. V4 archived results were recovered but its private implementation was not rerun. V8 development search was not rerun or promoted. Training-free mathematical inference can still require baseline reference construction and calibration. False alert windows and premature episodes are different units; experiments cannot be pooled. Protected implementations remain in Validation-Private/training_free_v1.
