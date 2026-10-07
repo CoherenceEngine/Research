@@ -1,0 +1,29 @@
+{
+  "evaluation": "locked_v0.4.1_holdout",
+  "manifest_sha256": "ab980451edd3a2a3a58d0156da58f17dbd4ec0f40704fec91683f2c1cf59bb95",
+  "policies": {
+    "bellman": {
+      "survived": 72,
+      "violations": 0,
+      "mean_energy": 80.23041541666666,
+      "mean_command_events": 47.986111111111114,
+      "mean_active_steps": 47.65277777777778
+    },
+    "event_v041": {
+      "survived": 72,
+      "violations": 0,
+      "mean_energy": 63.99684558333334,
+      "mean_command_events": 5.763888888888889,
+      "mean_active_steps": 18.36111111111111
+    }
+  },
+  "advancement": {
+    "checks": {
+      "survival_72_of_72": true,
+      "zero_safety_violations": true,
+      "energy_10pct_below_bellman": true,
+      "command_events_25pct_below_bellman": true
+    },
+    "passes_all": true
+  }
+}
