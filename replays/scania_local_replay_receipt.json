@@ -1,0 +1,29 @@
+{
+  "scope": "saved-model execution on embedded X_test, labels from archived ledger; not fresh dataset provenance or retraining",
+  "bundle_sha256": "6779124e32e9f4a3a095b82d8af5d097a8038acbd6d42dd19924bfcd8bf19737",
+  "ledger_sha256": "cb4c7da50ace8991f3b3106f92d602b5f2622bd1d4da35b5bfd110c34361b875",
+  "rows": 16000,
+  "decision_mismatches": {
+    "baseline_prediction": 0,
+    "coherence_v2_prediction": 0,
+    "coherence_gate_calls_heavy": 0
+  },
+  "baseline": {
+    "false_positives": 841,
+    "false_negatives": 6,
+    "true_positives": 369,
+    "true_negatives": 14784,
+    "total_cost": 11410
+  },
+  "gated": {
+    "false_positives": 740,
+    "false_negatives": 6,
+    "true_positives": 369,
+    "true_negatives": 14885,
+    "total_cost": 10400
+  },
+  "recorded_route_calls": 2292,
+  "note": "Evaluator computes heavy probabilities for all rows to compare predictions, route count is not instrumented execution savings.",
+  "status": "EXACT_DECISION_REPLAY",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]"
+}
