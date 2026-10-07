@@ -8,7 +8,7 @@ This addition provides original HBI simulation outputs, a local Scania saved-mod
 
 From the repository root: `python replays/check_replays.py`. Then `python validation/audit.py all` for existing aggregate checks.
 
-For a local visual page: `python -m http.server 8000 --bind 127.0.0.1` from the repository root, then open http://127.0.0.1:8000/replays/viewer.html. Alternatively download viewer.html and open it locally, it is self-contained. GitHub displays HTML source and does not host this viewer as an interactive page automatically.
+For a local visual page: `python -m http.server 8000 --bind 127.0.0.1` from the repository root, then open http://127.0.0.1:8000/replays/viewer.html. Run `python replays/decode_viewer_data.py` before starting the server to decode the interactive playback data. GitHub displays HTML source and does not host this viewer as an interactive page automatically.
 
 ## What was executed
 
@@ -21,3 +21,11 @@ For a local visual page: `python -m http.server 8000 --bind 127.0.0.1` from the 
 Private executable controller package and Scania replay helper: https://github.com/CoherenceEngine/Validation-Private/tree/main/replays_v1 . Access is required. All new code and evidence remain all rights reserved unless separately licensed.
 
 See coverage.json and the existing validation package READMEs for track-specific gaps. An external reviewer receipt remains pending for this addition.
+
+## Interactive playback
+
+The live viewer now includes a 16,000-record Scania decision playback and record inspector, paired 48-step trajectories for all 72 original HBI scenarios, and model comparisons with the MLP failure highlighted.
+
+To run locally: run `python decode_viewer_data.py`, then `python -m http.server` from this folder and open `viewer.html`. Compressed data contains public decisions and synthetic simulator outputs only. No protected engine internals are included.
+
+HBI trajectories were captured by observing the unchanged original simulator; all 144 final trial results matched archived rows. This is local reproduction, not third-party validation. Scania counters represent recorded routing, not measured electricity savings.
