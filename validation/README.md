@@ -19,3 +19,7 @@ For original NASA outputs: `python validation/audit.py nasa --artifacts /path/to
 Use [REVIEWER_REPORT.md](REVIEWER_REPORT.md) to document the actual scope of outside review. [Mathematical extensions](../research/mathematical_extensions/README.md) remain separate. Original experiments 1–5 are historical exploration, not five new validation passes; see [historical experiments](../research/historical_experiments/README.md).
 
 The source register is a historical snapshot. Later protocols do not overwrite earlier failures, including the optical negative result. No blanket open-source license applies; `audit.py` and `test_audit.py` alone use the scoped MIT license in LICENSE.
+
+## October 7 replay recovery update
+
+[Replay suite](../replays/README.md): HBI simulator rerun matched both archived output files, and Scania saved-model replay matched all 16,000 decisions. NASA's six canonical CSVs are now recovered under replays/ and match their receipt hashes; no NASA engine execution was performed in this addition. The earlier inventory above describes the initial package. New recovery details are in the suite README. Outside reviewer execution remains pending.
