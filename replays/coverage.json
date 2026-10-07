@@ -1,0 +1,42 @@
+[
+  {
+    "id": "hbi",
+    "status": "SIMULATION_REPRODUCED_LOCALLY",
+    "scope": "Original 72-case proxy-controller simulation, paired outputs match archive"
+  },
+  {
+    "id": "scania",
+    "status": "SAVED_MODEL_DECISIONS_REPRODUCED_LOCALLY",
+    "scope": "All 16,000 decisions matched, embedded X_test and archived labels; private bundle"
+  },
+  {
+    "id": "nasa",
+    "status": "CANONICAL_OUTPUT_HASHES_MATCH",
+    "scope": "Six archived aggregate CSVs recovered, engine execution not performed"
+  },
+  {
+    "id": "model-families",
+    "status": "AGGREGATE_AUDIT_AVAILABLE",
+    "scope": "Eight pass, MLP non-pass; nine executable bundles incomplete"
+  },
+  {
+    "id": "fraud",
+    "status": "EXECUTION_ARTIFACTS_MISSING",
+    "scope": "Historical summary only; original predictions and split needed"
+  },
+  {
+    "id": "ecg",
+    "status": "EXECUTION_ARTIFACTS_MISSING",
+    "scope": "Preliminary summary; original scored windows and patient mapping needed"
+  },
+  {
+    "id": "uci-power",
+    "status": "GROUND_TRUTH_AND_OUTPUTS_MISSING",
+    "scope": "Alert observations only, no scored replay claimed"
+  },
+  {
+    "id": "optical",
+    "status": "FROZEN_NEGATIVE_RESULT_PRESERVED",
+    "scope": "See evidence/optical-distinct-detectors.md; original measured channels not released here"
+  }
+]
