@@ -12,6 +12,10 @@ The Coherence Engine™ is an implemented computational system developed to inve
 - [Reproduction and access limits](REPRODUCIBILITY.md)
 - [Publication scope](PUBLICATION_SCOPE.md)
 
+## Executable independent decision audit
+
+[Scania validation package](validation/scania_v1/README.md) now includes a 16,000-row decision-only ledger, hash checks, an inspectable scorer, six integrity tests, and an external-review template. It independently supports checking reported arithmetic; it does not execute the engine or establish external replication.
+
 ## Reading the evidence
 
 Results are specific to the named implementation, dataset, and test. A development pass is not an independent holdout pass. Detection sensitivity does not establish operational usefulness when alert burden is excessive. Failed gates and partial tests are retained.
