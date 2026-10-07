@@ -16,6 +16,10 @@ The Coherence Engine™ is an implemented computational system developed to inve
 
 [Scania validation package](validation/scania_v1/README.md) now includes a 16,000-row decision-only ledger, hash checks, an inspectable scorer, six integrity tests, and an external-review template. It independently supports checking reported arithmetic; it does not execute the engine or establish external replication.
 
+## Expanded validation portfolio
+
+[Open the validation portfolio](validation/README.md) for NASA, HBI, nine-model gating, credit-card fraud, ECG and UCI Power. It includes an aggregate arithmetic auditor, archived NASA output hash checks, five integrity tests, per-track reproduction requirements and a shared independent reviewer report. Historical synthetic experiments, office-building observations and mathematical extensions are preserved separately. Missing artifacts are explicit; this release does not establish new outside replication.
+
 ## Reading the evidence
 
 Results are specific to the named implementation, dataset, and test. A development pass is not an independent holdout pass. Detection sensitivity does not establish operational usefulness when alert burden is excessive. Failed gates and partial tests are retained.
