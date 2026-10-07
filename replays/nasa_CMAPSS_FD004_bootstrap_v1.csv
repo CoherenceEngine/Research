@@ -1,0 +1,7 @@
+RUL horizon,Comparison,Observed F1 difference,Bootstrap 95% low,Bootstrap 95% high,P(first > second)
+20,Full CE contextual relational − EWMA contextual,0.05069802467703588,-0.007089926670041745,0.11180549213990197,0.9525
+20,Full CE contextual relational − CE contextual without A_rel,0.026930256036987066,0.004018896053828293,0.05141563884428028,0.99175
+30,Full CE contextual relational − EWMA contextual,0.08397192869241132,0.025661118253599593,0.14807176958079196,0.99775
+30,Full CE contextual relational − CE contextual without A_rel,-0.002233421984526418,-0.0261696145837184,0.01986987832723227,0.4265
+50,Full CE contextual relational − EWMA contextual,0.12394849785405371,0.0694117648680459,0.18155322134122187,1.0
+50,Full CE contextual relational − CE contextual without A_rel,-0.005392354124751031,-0.023615953893953913,0.01093420854506703,0.27525
