@@ -23,3 +23,7 @@ These links identify sources; they do not guarantee matching data versions, auth
 ## Corrections
 
 Each correction should name the affected record and preserve prior versions in Git history. New branches receive separate identifiers. Do not silently replace a failed result with a later development pass.
+
+## Expanded portfolio, October 7, 2026
+
+See validation/README.md and validation/portfolio_manifest.json for six additional tracks, exact source Git blob identifiers, source content hashes and retrieved Atlas page hashes. The public stdlib auditor verifies released file integrity, nine-model aggregate arithmetic, HBI reductions from rounded means and optional NASA archived CSV hashes. Five tests passed locally. NASA canonical outputs and original executable scripts are not in this public release; missing outputs are reported explicitly. Fraud, ECG and UCI require original outputs and protocol recovery before execution replication. Each package lists those gaps. No Coherence Engine execution was performed for this expansion.
