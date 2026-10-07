@@ -29,3 +29,13 @@ The live viewer now includes a 16,000-record Scania decision playback and record
 To run locally: run `python decode_viewer_data.py`, then `python -m http.server` from this folder and open `viewer.html`. Compressed data contains public decisions and synthetic simulator outputs only. No protected engine internals are included.
 
 HBI trajectories were captured by observing the unchanged original simulator; all 144 final trial results matched archived rows. This is local reproduction, not third-party validation. Scania counters represent recorded routing, not measured electricity savings.
+
+## Additional recovered track views
+
+- NASA: dataset, warning horizon and metric comparisons from six hash-verified archived CSVs. No new NASA engine run.
+- Fraud: 469 chronological development windows, 500 transactions per group, with archived alerts matched to dataset-hash-verified labels. Original method missed all 186 positive groups. This is a distinct audit from the prior overlapping-window report, not untouched holdout or individual transaction detection.
+- ECG: method and metric comparison for the original four-method cardiac-adapted study, kept separate from the 39-record exploratory summary. No window playback or clinical validation.
+- UCI power: all 48 historical monthly mean values and reported alert counts. No event accuracy claim without ground truth.
+- Optical: all 18 recorded basis/representation comparisons, preserving the frozen negative result. Raw channels remain unavailable; no waveform replay.
+
+Public recovery assets contain aggregate outputs or archived alert flags. Protected core implementation is excluded. See track_recovery_receipt.json for asset hashes and scope. These are recovered developer records, not third-party execution receipts.
