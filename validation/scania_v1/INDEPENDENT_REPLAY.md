@@ -26,3 +26,7 @@ The external reviewer acquires the source data, verifies split mapping, independ
 A later test must use genuinely uninspected data selected by the reviewer or an agreed custodian. Before labels or results are opened, record dataset identity, preparation, endpoint, comparator, resource budget, unit-level allocation, sample adequacy, numerical success criteria, exclusions, and an immutable engine/build identity. Keep outcome labels out of model inputs. This package does not invent new numerical gates or claim that an independent cohort has already been secured.
 
 Full training reproduction is a separate task. Scania saved-model replay does not establish performance of every proprietary engine operator, universal cross-domain behavior, or measured electricity savings.
+
+## Saved-bundle recovery update, October 7, 2026
+
+The original saved bundle was recovered with the exact recorded hash. A local execution using embedded X_test and labels from the archived ledger matched all 16,000 baseline, gated and routing decisions. See [public receipt](../../replays/scania_local_replay_receipt.json) and [private replay helper](https://github.com/CoherenceEngine/Validation-Private/tree/main/replays_v1). This establishes local saved-model decision replay, not full training reproduction, fresh source-ARFF matching or outside reviewer execution. The evaluator computes heavy probabilities on all rows to compare decisions, so routing counts remain distinct from instrumented compute savings.
