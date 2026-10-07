@@ -1,0 +1,394 @@
+{
+  "track": "training-free-ai",
+  "scope": "Frozen mathematical detector experiments, separate from trained-model gating. Cohorts and calibration histories differ. Training-free means no fitted model weights; configuration and policy calibration may remain.",
+  "studies": [
+    {
+      "id": "fd001",
+      "title": "FD001 held-out comparison and later development versions",
+      "scope": "80 engines, IDs 21\u2013100. Original comparison cohort reused in later development; v6 is a development audit. Public reference operator is distinct from the private engine adapter. V4 private source was not recovered, so its recorded outputs were audited but not rerun.",
+      "rows": [
+        {
+          "label": "Public-safe training-free operator",
+          "detection": 100.0,
+          "lead": 59.2875,
+          "false_alerts": 8.65,
+          "f1": 0.742367833209233,
+          "utility": 0.47490765292105264,
+          "status": "executed"
+        },
+        {
+          "label": "Rolling variance",
+          "detection": 68.75,
+          "lead": 38.127272727272725,
+          "false_alerts": 1.2875,
+          "f1": 0.5564304461942257,
+          "utility": 0.3074881438865572,
+          "status": "executed"
+        },
+        {
+          "label": "Random-forest RUL",
+          "detection": 100.0,
+          "lead": 48.5375,
+          "false_alerts": 0.225,
+          "f1": 0.8967391304347826,
+          "utility": 0.9895976328130933,
+          "status": "executed"
+        },
+        {
+          "label": "Private Coherence Engine adapter",
+          "detection": 100.0,
+          "lead": 52.35,
+          "false_alerts": 0.5875,
+          "f1": 0.9181347150259068,
+          "utility": 0.9623308174561078,
+          "status": "executed_authorized_private_adapter"
+        },
+        {
+          "label": "Private CE v5",
+          "detection": 100.0,
+          "lead": 49.225,
+          "false_alerts": 0.3125,
+          "f1": 0.89989235737352,
+          "utility": 0.9832355935795369,
+          "status": "NOT PROMOTED, policy experiment"
+        },
+        {
+          "label": "Private CE v6",
+          "detection": 100.0,
+          "lead": 50.975,
+          "false_alerts": 0.45,
+          "f1": 0.9051404345521993,
+          "utility": 0.9765134615449049,
+          "status": "NOT PROMOTED, reused cohort"
+        }
+      ]
+    },
+    {
+      "id": "v6fd002",
+      "title": "v6 frozen FD002 transfer, FAIL",
+      "scope": "260 complete run-to-failure engines, unchanged FD001-calibrated policy. Local rerun reproduced archived metrics and all recorded decisions exactly. This does not establish a new outside-reviewer validation.",
+      "rows": [
+        {
+          "label": "Private CE v6",
+          "detection": 0,
+          "lead": null,
+          "false_alerts": 0,
+          "f1": 0,
+          "utility": -1,
+          "status": "FAIL, zero detections"
+        }
+      ]
+    },
+    {
+      "id": "owner_core_v0.1_fd001",
+      "title": "Exact owner Core v0.1 \u00b7 FD001,100engines,5fold engine holdout",
+      "scope": "Private owner core unchanged, archived execution. FD001,100engines,5fold engine holdout. Alert burden is premature episodes, not windows; F1 is sample-level.",
+      "rows": [
+        {
+          "label": "Exact owner Core v0.1",
+          "detection": 100.0,
+          "lead": 121.91,
+          "false_alerts": 3.86,
+          "f1": 0.7619623178101671,
+          "utility": null,
+          "status": "MIXED"
+        },
+        {
+          "label": "rolling_variance",
+          "detection": 100.0,
+          "lead": null,
+          "false_alerts": 0.04,
+          "f1": 0.3128469203504314,
+          "utility": null,
+          "status": "PASS"
+        },
+        {
+          "label": "trained_rul",
+          "detection": 100.0,
+          "lead": null,
+          "false_alerts": 0.35,
+          "f1": 0.6857439087610161,
+          "utility": null,
+          "status": "PASS"
+        }
+      ],
+      "insight": "MIXED: detection and lead-time gates passed; premature-alert episode criterion failed. No threshold retuning was performed after observing the result."
+    },
+    {
+      "id": "ce_nasa_v7_fd004",
+      "title": "CE NASA v7 \u00b7 FD004,249engines,new subset after FD002 calibration",
+      "scope": "Training-free decision logic with development-calibrated nuisance normalization. FD004,249engines,new subset after FD002 calibration. Alert burden is windows per engine.",
+      "rows": [
+        {
+          "label": "CE NASA v7",
+          "detection": 100.0,
+          "lead": 53.44979919678715,
+          "false_alerts": 6.27710843373494,
+          "f1": 0.6803011292346298,
+          "utility": 0.8091346028252763,
+          "status": "NOT_PROMOTED"
+        }
+      ],
+      "insight": "Detection,lead and coverage passed; falsealertburden,F1 andutility gates failed. Archived independently locked subset test, not an outside reviewer rerun."
+    },
+    {
+      "id": "ce_nasa_v8_development",
+      "title": "CE NASA v8 sustained onset \u00b7 FD002+FD004,509engines,previously examined development data",
+      "scope": "Development candidate, no untouched validation. FD002+FD004,509engines,previously examined development data. Alert burden is windows per engine.",
+      "rows": [
+        {
+          "label": "CE NASA v8 sustained onset",
+          "detection": 99.80353634577604,
+          "lead": 41.19291338582677,
+          "false_alerts": 0.9351669941060904,
+          "f1": 0.7527749747729565,
+          "utility": 0.961985193467577,
+          "status": "DEVELOPMENT_NOT_PROMOTED"
+        }
+      ],
+      "insight": "One engine missed, meanlead below45cycles and falsealertwindows above.5/engine. Crossversion85%burdenreduction is not controlled independent comparison."
+    },
+    {
+      "id": "native_reasoner_v0.3",
+      "title": "Public-safe native reasoner v0.3 \u00b7 FD001,80evaluationenginesIDs21to100",
+      "scope": "Public reference operator, protected core not executed. FD001,80evaluationenginesIDs21to100. Alert burden is windows per engine.",
+      "rows": [
+        {
+          "label": "Public-safe native reasoner v0.3",
+          "detection": 100.0,
+          "lead": 104.1625,
+          "false_alerts": null,
+          "f1": null,
+          "utility": null,
+          "status": "IMPLEMENTATION_FEASIBILITY_ONLY"
+        }
+      ],
+      "insight": "High sensitivity with very early alerts; FD001 lacks healthy non-failing controls and labeled fault-onset cycles, so specificity and conventional false-positive rate are not established."
+    },
+    {
+      "id": "cms11_reference",
+      "title": "CMS11 internal reference \u00b7 FD001,100engines,5fold",
+      "scope": "Separate reference build, not exact ownercore. FD001,100engines,5fold. Alert burden is premature episodes, not windows; F1 is sample-level.",
+      "rows": [
+        {
+          "label": "CMS11 internal reference",
+          "detection": 100.0,
+          "lead": 123.55,
+          "false_alerts": 0.84,
+          "f1": 0.8255654672413217,
+          "utility": null,
+          "status": "ARCHIVED_INTERNAL_REFERENCE_PASS"
+        }
+      ],
+      "insight": "Reference result must not be attributed to exact ownerCorev0.1 which is MIXED. Criteria repository-specific, not NASAdefined."
+    }
+  ],
+  "reproduction": {
+    "scope": "Local reproduction on previously evaluated data, not a fresh independent validation",
+    "unchanged_method": true,
+    "source_hashes": {
+      "run_ce_v6.py": "05af0455a8f1aa60f2d5a29bb275071e547e280d4d3cc8d43a2e27a93a5c8843",
+      "run_frozen_fd002.py": "f3609b5fe6f1cd33d68aba80e07e3caba481ff8cbb076e063181ec1521f97a84"
+    },
+    "dataset_sha256": "dac6c4dbc4e7c1bdeb5747da3d313d05c395bb99801b44a002b26a2ba13d788f",
+    "matches": {
+      "fd002_metrics.json": true,
+      "fd002_frozen_decisions.csv": true
+    },
+    "reference_fd001_matches": {
+      "summary.json": true,
+      "per_engine.csv": true
+    },
+    "v7": {
+      "status": "PASS_EXACT_REPRODUCTION_OF_NOT_PROMOTED_RESULT",
+      "dataset_sha256": "27ef6160b6a1dcb2613a88de9c239f763b223f02cdc41dc5cdedc5dc189b6218",
+      "decisions_sha256": "1d36663b92e69f2545ca5c8508aa8ef2f08d3162b951255399d3e4a6b26bc3a9",
+      "metrics_sha256": "6992024c9204a3350c36e511b118aa78c37813c650e25e62c16f83cfe5d1c21b",
+      "parameters_changed": false,
+      "source_modified": false,
+      "promotion_gate_passed": false,
+      "engines": 249,
+      "observations": 61249,
+      "outside_reviewer_execution": false
+    }
+  },
+  "archives": {
+    "CE_NASA_v7_PRIVATE_Implementation_and_Evaluation.zip": "97c9ad647d8dbb9e53737b8be17a35f2969e3f04cdcfaada1ba9b4eab6aa2785",
+    "CoherenceEngine_Core_v0.1_NASA_FD001_Frozen_Evidence.zip": "14d1aa085303bafcad474205dbe6411377515558bbe2645957d72a4740ff4315",
+    "CE_NASA_v8_Sustained_Onset_Development_Candidate.zip": "a765061e520af52b58d9bb807ac8875b1e804bfc8cafb3d3ddb2ea343ee9f434",
+    "CE_NASA_v8_PRIVATE_Implementation.zip": "eddd9ac5e196ec94a2d5355347a295ccb22584b5484a00f68336b987701553da",
+    "NASA_CMAPSS_FD001_Verified_Data.zip": "99c98e6b0b67e11798061ab6270f2cc7b20abb9d8c5bf225ca08f0304936036e",
+    "NASA_CMAPSS_Frozen_Comparison_Harness_v1.zip": "fee32ac309dec1b4a18308ef3d8a879c36b9e7e9a04ff04cd9e52d55f972f6ac",
+    "Training_Free_AI_NASA_CMAPSS_FD001_v1.zip": "267f3eb6e553b06ce46715be034d81c03c2d2e0e68bc89a0f206f4ea1a817fa1",
+    "CE_CMS11_NASA_FD001_Internal_Reference_Run.zip": "a0cd9d54da7c66bb24c0cc37fdab45a84357db6fbb17d9e7eb4195626bb6ea3a",
+    "CE_NASA_v6_Structural_Arbitration_Development_Audit.zip": "7f0bdf12fbc40efa2c473923a0d400b1e309b985f61bde561485f3bb566c3bc6",
+    "Coherence_Native_Reasoner_NASA_FD001_Official_Run_v0_3.zip": "bc9e4f0531a1a90a454dfcda679ea96348fc844e6fb66731f4c1bc379d45a8f1",
+    "CE_NASA_v5_Validation_Only_Evaluation.zip": "1ec48a8a5c5e2e736be16d91190ea20d975fc093c0281aa09239c4ba536355ad",
+    "CE_NASA_v7_FD004_Independent_Evaluation.zip": "19159989e25ecae4bc1ef75a5fa36f992836503b9852520814d4a12f2b9e0f9b",
+    "CE_NASA_v6_FD002_True_Independent_Validator_PRIVATE.zip": "f83f9b119163c114c96dd1ea25ead7c56a1376449b66262042492e5a0d455106",
+    "CE_NASA_v6_FD002_Independent_Validation_FAILED.zip": "643a9f97e480257ea9c2a9330697541ea4730be87c131a56f02bbeffa4805c44",
+    "NASA_CMAPSS_Frozen_Comparison_with_CE_v4_v2.zip": "cc899fe4ac2c55daa69c4bc5e8875345639d2d721fc6ad5b4fed75ac4ccf5b47"
+  },
+  "later_versions": {
+    "scope": "Distinct archived versions and cohorts, not interchangeable measurements. Premature episodes and falsealertwindows are different units. No new core execution in this recovery.",
+    "versions": [
+      {
+        "id": "owner_core_v0.1_fd001",
+        "label": "Exact owner Core v0.1",
+        "cohort": "FD001,100engines,5fold engine holdout",
+        "status": "MIXED",
+        "implementation_scope": "Private owner core unchanged, archived execution",
+        "metrics": {
+          "engines_total": 100,
+          "engines_detected": 100,
+          "detection_rate": 1.0,
+          "mean_lead_time": 121.91,
+          "median_lead_time": 125.0,
+          "false_alerts_total": 386,
+          "false_alerts_per_engine": 3.86,
+          "sample_precision": 0.6856685860524632,
+          "sample_recall": 0.85736,
+          "sample_f1": 0.7619623178101671
+        },
+        "comparators": {
+          "rolling_variance": {
+            "status": "PASS",
+            "detection_rate": 1.0,
+            "median_lead_time": 31.0,
+            "false_alerts_per_engine": 0.04,
+            "sample_f1": 0.3128469203504314
+          },
+          "trained_rul": {
+            "status": "PASS",
+            "detection_rate": 1.0,
+            "median_lead_time": 76.0,
+            "false_alerts_per_engine": 0.35,
+            "sample_f1": 0.6857439087610161
+          }
+        },
+        "interpretation": "MIXED: detection and lead-time gates passed; premature-alert episode criterion failed. No threshold retuning was performed after observing the result.",
+        "provenance": {
+          "path": "owner_core_v0_1_fd001_summary.json",
+          "sha256": "ca46b58db053a6c5456c76e253b68adf037cd3bcadacb19595bb3362db4a816f"
+        }
+      },
+      {
+        "id": "ce_nasa_v7_fd004",
+        "label": "CE NASA v7",
+        "cohort": "FD004,249engines,new subset after FD002 calibration",
+        "status": "NOT_PROMOTED",
+        "implementation_scope": "Training-free decision logic with development-calibrated nuisance normalization",
+        "metrics": {
+          "detection_rate": 1.0,
+          "mean_lead_cycles": 53.44979919678715,
+          "false_alert_windows_per_engine": 6.27710843373494,
+          "precision": 0.6343004211511465,
+          "recall": 0.733495670995671,
+          "f1": 0.6803011292346298,
+          "coverage": 0.9987157141546648,
+          "abstention_rate": 0.0012842858453352903,
+          "utility": 0.8091346028252763
+        },
+        "interpretation": "Detection,lead and coverage passed; falsealertburden,F1 andutility gates failed. Archived independently locked subset test, not an outside reviewer rerun.",
+        "provenance": {
+          "path": "fd004_metrics.json",
+          "sha256": "6992024c9204a3350c36e511b118aa78c37813c650e25e62c16f83cfe5d1c21b"
+        }
+      },
+      {
+        "id": "ce_nasa_v8_development",
+        "label": "CE NASA v8 sustained onset",
+        "cohort": "FD002+FD004,509engines,previously examined development data",
+        "status": "DEVELOPMENT_NOT_PROMOTED",
+        "implementation_scope": "Development candidate, no untouched validation",
+        "metrics": {
+          "detection_rate": 0.9980353634577603,
+          "mean_lead_cycles": 41.19291338582677,
+          "false_alert_windows_per_engine": 0.9351669941060904,
+          "precision": 0.9038772213247173,
+          "recall": 0.6449567723342939,
+          "f1": 0.7527749747729565,
+          "utility": 0.961985193467577
+        },
+        "interpretation": "One engine missed, meanlead below45cycles and falsealertwindows above.5/engine. Crossversion85%burdenreduction is not controlled independent comparison.",
+        "provenance": {
+          "path": "development_metrics.json",
+          "sha256": "878400bc2b0d9384e60403c08ab55f2990accc6fab9252b1e1cbecc63a813ab0"
+        }
+      },
+      {
+        "id": "native_reasoner_v0.3",
+        "label": "Public-safe native reasoner v0.3",
+        "cohort": "FD001,80evaluationenginesIDs21to100",
+        "status": "IMPLEMENTATION_FEASIBILITY_ONLY",
+        "implementation_scope": "Public reference operator, protected core not executed",
+        "metrics": {
+          "detection_rate": 1.0,
+          "mean_lead_cycles": 104.1625,
+          "median_lead_cycles": 98.5,
+          "pre_70pct_alert_rate": 0.9875,
+          "abstention_rate": 0.0
+        },
+        "interpretation": "High sensitivity with very early alerts; FD001 lacks healthy non-failing controls and labeled fault-onset cycles, so specificity and conventional false-positive rate are not established.",
+        "provenance": {
+          "path": "summary.json",
+          "sha256": "01de20cb11d4949b8e0fb430a6291dadd509468d1e9db9307c13fb525c62adc5"
+        }
+      },
+      {
+        "id": "cms11_reference",
+        "label": "CMS11 internal reference",
+        "cohort": "FD001,100engines,5fold",
+        "status": "ARCHIVED_INTERNAL_REFERENCE_PASS",
+        "implementation_scope": "Separate reference build, not exact ownercore",
+        "metrics": {
+          "engines_total": 100,
+          "engines_detected": 100,
+          "detection_rate": 1.0,
+          "mean_lead_time": 123.55,
+          "median_lead_time": 125.0,
+          "false_alerts_total": 84,
+          "false_alerts_per_engine": 0.84,
+          "sample_precision": 0.7087946761516838,
+          "sample_recall": 0.9884,
+          "sample_f1": 0.8255654672413217
+        },
+        "interpretation": "Reference result must not be attributed to exact ownerCorev0.1 which is MIXED. Criteria repository-specific, not NASAdefined.",
+        "provenance": {
+          "path": "nasa_fd001_summary.json",
+          "sha256": "32a2d2c13e88116fdc6c1a9fecbca856a30d356ac18395e0b0da87454e972f4a"
+        }
+      }
+    ],
+    "source_archives": [
+      {
+        "filename": "CE_NASA_v7_PRIVATE_Implementation_and_Evaluation.zip",
+        "sha256": "97c9ad647d8dbb9e53737b8be17a35f2969e3f04cdcfaada1ba9b4eab6aa2785"
+      },
+      {
+        "filename": "CoherenceEngine_Core_v0.1_NASA_FD001_Frozen_Evidence.zip",
+        "sha256": "14d1aa085303bafcad474205dbe6411377515558bbe2645957d72a4740ff4315"
+      },
+      {
+        "filename": "CE_NASA_v8_Sustained_Onset_Development_Candidate.zip",
+        "sha256": "a765061e520af52b58d9bb807ac8875b1e804bfc8cafb3d3ddb2ea343ee9f434"
+      },
+      {
+        "filename": "CE_NASA_v8_PRIVATE_Implementation.zip",
+        "sha256": "eddd9ac5e196ec94a2d5355347a295ccb22584b5484a00f68336b987701553da"
+      },
+      {
+        "filename": "CE_CMS11_NASA_FD001_Internal_Reference_Run.zip",
+        "sha256": "a0cd9d54da7c66bb24c0cc37fdab45a84357db6fbb17d9e7eb4195626bb6ea3a"
+      },
+      {
+        "filename": "Coherence_Native_Reasoner_NASA_FD001_Official_Run_v0_3.zip",
+        "sha256": "bc9e4f0531a1a90a454dfcda679ea96348fc844e6fb66731f4c1bc379d45a8f1"
+      },
+      {
+        "filename": "CE_NASA_v7_FD004_Independent_Evaluation.zip",
+        "sha256": "19159989e25ecae4bc1ef75a5fa36f992836503b9852520814d4a12f2b9e0f9b"
+      }
+    ]
+  }
+}
