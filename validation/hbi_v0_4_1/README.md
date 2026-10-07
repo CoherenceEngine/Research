@@ -21,3 +21,7 @@ Use [the shared reviewer report](../REVIEWER_REPORT.md). No outside reviewer has
 Atlas orientation: https://delta72-investor-research-atlas.allialli05.chatgpt.site/hbi.html
 
 Source repository paths and immutable Git blob identifiers are recorded in [portfolio_manifest.json](../portfolio_manifest.json). Private source access remains controlled. The summaries are historical developer records.
+
+## Simulation recovery update, October 7, 2026
+
+The original simulator and locked manifest were recovered and rerun unchanged. The 144 paired policy rows and summary matched archived bytes exactly; eight original tests passed. Outputs are in [replays/](../../replays/README.md), executable controller source is in the private Validation-Private/replays_v1 package. The simulator uses benchmark proxy operators rather than the protected engine equations. This supersedes the summary-only availability above. It remains synthetic simulation and local reproduction, with no new independent reviewer or physical-energy claim.
