@@ -1,5 +1,7 @@
 # The Coherence Engine™: UCI Power structural regimes
 
+Explore structural changes in household electricity data. The study provides an alert-pattern comparison and a defined next step for determining which changes correspond to meaningful events.
+
 Status: **GROUND_TRUTH_PENDING**. Prepared October 7, 2026.
 
 ## Preserved evidence
@@ -14,7 +16,7 @@ Recover exact dataset/time range, timezone, sampling and missing-data rules, det
 
 Exact source files and hashes; event ground truth; original timestamped outputs; split manifest; frozen event protocol and comparator.
 
-Use [the shared reviewer report](../REVIEWER_REPORT.md). No outside reviewer has executed this new public package. No engine source, internal operators, equations or private thresholds are released.
+Use [the shared reviewer report](../REVIEWER_REPORT.md) to document independent review. Outside execution review is pending; protected implementation artifacts require controlled access.
 
 ## Historical observations
 

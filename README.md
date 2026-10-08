@@ -1,41 +1,45 @@
 # The Coherence Engine™ Research
 
-### [Open the live interactive benchmark viewer](https://delta72-investor-research-atlas.allialli05.chatgpt.site/replays.html)
+## See what changing relationships can reveal.
 
-Public research evidence and evaluation guidance by Allison Hensgen.
+Where would earlier visibility or fewer heavy-model evaluations make a meaningful difference in your system?
 
-The Coherence Engine™ is an implemented computational system developed to investigate coherence, drift, instability, and recovery in changing systems. This repository documents selected internal benchmark findings, their implementation boundaries, and limitations. It does not establish universal performance or independent replication.
+The Coherence Engine™ is Allison Hensgen’s implemented computational technology for examining coherence, drift, instability, and recovery. This repository lets you explore selected benchmark results, inspect their evidence, and identify a focused technical evaluation for your own use case.
 
-## Contents
+**[Explore the interactive benchmark viewer](https://delta72-investor-research-atlas.allialli05.chatgpt.site/replays.html)** · **[Explore the research portfolio](https://coherenceengine.github.io/CoherenceEngine/)** · **[Discuss a pilot](mailto:CoherenceDashboard@gmail.com?subject=The%20Coherence%20Engine%20Pilot%20Inquiry)**
 
-- [Selected benchmark evidence](evidence/benchmark-register.csv)
-- [Optical negative-result summary](evidence/optical-distinct-detectors.md)
-- [Evaluation protocol](protocols/evaluation.md)
-- [Reproduction and access limits](REPRODUCIBILITY.md)
-- [Publication scope](PUBLICATION_SCOPE.md)
+## Start with the evidence
 
-## Executable independent decision audit
+| Evaluation | Documented result | Explore |
+|---|---|---|
+| Scania APS, 16,000 records | 85.7% fewer recorded heavy-model calls; false positives 841 → 740; missed failures unchanged at six | [Decision-ledger audit](validation/scania_v1/README.md) |
+| HBI v0.4.1, 72 simulated cases | About 20.2% lower modeled energy, 88.0% fewer commands, 61.5% fewer active steps; both policies survived all cases with zero violations | [Simulation evidence](validation/hbi_v0_4_1/README.md) |
+| Nine Scania model configurations | Eight meet the registered operational gates | [Model comparison](validation/model_families_v1/README.md) |
+| NASA C-MAPSS FD002–FD004 | Six archived CSVs match receipt hashes; CE exceeds tested EWMA at 8/9 horizons, while supervised logistic regression exceeds CE at 8/9 | [NASA comparison](validation/nasa_fd002_fd004_v1/README.md) |
+| Historical Monte Carlo, 1,000 trials | Reported 100% detection and 406-step mean lead, versus 3.2% detection for variance | [Historical experiments](research/historical_experiments/README.md) |
 
-[Scania validation package](validation/scania_v1/README.md) now includes a 16,000-row decision-only ledger, hash checks, an inspectable scorer, six integrity tests, and an external-review template. It independently supports checking reported arithmetic; it does not execute the engine or establish external replication.
+Recorded routing, modeled control energy, and predictive performance are distinct measures. The Monte Carlo result is a historical synthetic report awaiting original-run replication. Scania’s Extra Trees configuration overlaps the nine-model study.
 
-## Expanded validation portfolio
+## Explore, inspect, evaluate
 
-[Open the validation portfolio](validation/README.md) for NASA, HBI, nine-model gating, credit-card fraud, ECG and UCI Power. It includes an aggregate arithmetic auditor, archived NASA output hash checks, five integrity tests, per-track reproduction requirements and a shared independent reviewer report. Historical synthetic experiments, office-building observations and mathematical extensions are preserved separately. Missing artifacts are explicit; this release does not establish new outside replication.
+- **Explore:** use the [live viewer](https://delta72-investor-research-atlas.allialli05.chatgpt.site/replays.html) to inspect decisions, paired simulation trajectories, and comparison results.
+- **Inspect:** run the [public evidence checks](REPRODUCIBILITY.md), review the [benchmark register](evidence/benchmark-register.csv), or use the [reviewer package](validation/README.md).
+- **Evaluate:** bring a decision, dataset, and comparator to a scoped pilot discussion. Agree on success criteria before testing.
 
-## Reading the evidence
+The register summarizes selected evaluations, their reported outcomes, evidence sources, and replication status. Each result applies to its identified implementation and protocol. Preliminary, mixed, and negative findings retain their study-specific status.
 
-Results are specific to the named implementation, dataset, and test. A development pass is not an independent holdout pass. Detection sensitivity does not establish operational usefulness when alert burden is excessive. Failed gates and partial tests are retained.
+## Build the next useful test
 
-The register is a selected public inventory, with September 27 entries marked FAIL removed from this view. Historical versions remain in Git history. It includes the reviewed NASA, HBI, model-family, fraud, ECG and UCI Power packages. Performance status and reproduction status are separate: HBI passes its simulation criteria, eight of nine model configurations pass their operational gates, NASA PASS_EXACT concerns reproduction, and preliminary or unscored tracks retain their current status. Scania's Extra Trees result overlaps the model-family study and should not be counted twice as independent evidence. This remains a selected register, not a complete inventory of every later research branch.
+Potential collaborators can help establish performance on new data, document independent reproduction, or evaluate a defined operational application. Pilot discussions start with the signals available, the decision to improve, and the consequence of an alert or missed event.
 
-## Research and commercial boundaries
+[Discuss a technical evaluation or investment conversation](mailto:CoherenceDashboard@gmail.com?subject=The%20Coherence%20Engine%20Research%20and%20Pilot%20Discussion)
 
-The proprietary engine implementation is not distributed here. No clinical efficacy, deployed energy savings, universal physical mechanism, or endorsement by dataset providers is claimed. Symbolic Δ.72 interpretations are separate from the empirical results documented here.
+## Research resources
 
-Website: https://coherenceengine.org
+[Validation portfolio](validation/README.md) · [Replay suite](replays/README.md) · [Evaluation protocol](protocols/evaluation.md) · [Optical study](evidence/optical-distinct-detectors.md) · [Mathematical research](research/mathematical_extensions/README.md)
 
-Copyright © 2026 Allison Hensgen. No blanket open-source or patent license is granted by this repository. See publication scope.
+## Access and ownership
 
-## Runnable replay and simulation addition
+Public materials support evidence review. Controlled access to executable artifacts is a separate step. Broader generalization, clinical benefit, deployed savings, and symbolic Δ.72 interpretations have their own evidence requirements.
 
-[Open the replay suite](replays/README.md) for the locally reproduced HBI 72-case simulation, exact Scania 16,000-decision saved-model replay receipt, six recovered NASA canonical output CSVs and a self-contained output viewer. Original executable HBI/controller artifacts and Scania model replay remain private. Other tracks retain explicit execution gaps.
+Copyright © 2026 Allison Hensgen. The core implementation remains proprietary. File-specific licenses and access terms are described in [publication scope](PUBLICATION_SCOPE.md).

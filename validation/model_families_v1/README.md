@@ -1,5 +1,7 @@
 # The Coherence Engine™: Scania APS nine-model gating
 
+Assess how gating behaves across different classifiers. Eight of nine tested configurations meet the operational criteria, with the full comparison retained so tradeoffs remain visible.
+
 Status: **AGGREGATE_ARITHMETIC_AUDIT**. Prepared October 7, 2026.
 
 ## Preserved evidence
@@ -14,7 +16,7 @@ Use audit.py models to recompute counts, cost (10 per false positive, 500 per fa
 
 Nine executable bundles and paired row ledgers; preprocessing; original data hashes; immutable split manifest; runtime and reviewer execution receipt.
 
-Use [the shared reviewer report](../REVIEWER_REPORT.md). No outside reviewer has executed this new public package. No engine source, internal operators, equations or private thresholds are released.
+Use [the shared reviewer report](../REVIEWER_REPORT.md) to document independent review. Outside execution review is pending; protected implementation artifacts require controlled access.
 
 ## Sources
 

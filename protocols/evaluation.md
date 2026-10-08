@@ -1,6 +1,6 @@
-# General evaluation protocol
+# Design a useful evaluation
 
-This is prospective evaluation guidance. It is not a claim that every historical record includes every item below.
+Start with a decision you want to improve, then agree on the evidence that would justify using The Coherence Engine™ for that task. This prospective protocol supports a scoped technical pilot or independent review. Historical studies are assessed against their recorded protocols; this guidance does not retroactively supply missing design details.
 
 1. Define one measurable task, endpoint, information horizon, and intended use.
 2. Identify the original dataset, version, license, specimen or session structure, and label provenance. Preserve meaningful units; repeated samples are not independent specimens.

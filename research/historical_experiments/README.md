@@ -1,15 +1,23 @@
-# Historical experiments 1–5
+# Historical experiments and recovery research
 
-The Atlas overview is a navigation source for historical exploratory work. It does not provide five independently validated operational claims. Before promoting any experiment into a validation package, recover its exact input, output, implementation version and predeclared falsification criteria. Identify synthetic demonstrations and mathematical illustrations explicitly. Status: historical orientation, original execution artifacts not released in this branch.
+These studies explore how The Coherence Engine™ responds to noise, recovery, drift, and changing system relationships. Allison developed the experiment suite with AI assistance for handoff to Joel; the original design package was prepared in May 2026. Exact executed versions and trial records remain under recovery.
 
-Source: https://delta72-investor-research-atlas.allialli05.chatgpt.site/overview.html
+[Explore the historical visualizations](https://delta72-investor-research-atlas.allialli05.chatgpt.site/overview.html)
 
-## Preserve contrary and limited findings
+| Study | Reported finding | Review scope |
+|---|---|---|
+| 01, noise threshold | Sharp Δ decline around noise σ ≈ 0.061 | Synthetic threshold response |
+| 02, recovery dynamics | Δ increases from 0.5984 to 11.8286 across simulated recovery rates | Synthetic recovery response |
+| 03, hidden drift | Detection at step 1060, 507 steps before failure and 1420 before variance | Positive example; z-score also detects at 1060 |
+| 04, shock response | Different peak deviations and return times across coherence settings | Mixed ordering; a monotonic recovery benefit is not established |
+| 05, cross-system generalization | Coefficient of variation 1.010, reported inconsistent | Generalization criterion not supported |
+| 06, Monte Carlo | 1000 trials; reported 100% detection, mean lead 406 and median 320 steps; variance 3.2%, mean and median 103 | Historical synthetic success awaiting original-run replication |
+| 07, office electricity | Four buildings; 354 CE alerts, 23 variance alerts, 348 CE-only alerts | Real-data observations awaiting labeled event verification |
 
-The overview describes experiments 1–5 as synthetic GPU experiments. Experiment 5 reports cross-system coefficient of variation 1.010 and labels it inconsistent. Preserve that result alongside the favorable drift and Monte Carlo demonstrations. The reported 15.4-second suite runtime has no matched CPU execution and does not prove GPU acceleration.
+The Monte Carlo record is included in [the benchmark register](../../evidence/benchmark-register.csv) as REPORTED_SYNTHETIC_SUCCESS. It is distinct from the HBI control simulation.
 
-The office-building exploration reports 354 CE alerts, 23 variance alerts and 348 CE-only alerts across four buildings. These are alert counts, not confirmed instability events or measured energy savings. Recover labeled events and timestamped outputs before operational scoring.
+## Next review step
 
-## Monte Carlo result added to the evidence register
+Recover the executed scripts, changes to the original design, data versions, parameters, thresholds, seeds, trial-level outputs, and success criteria. For office electricity, connect alert timestamps to independently labeled events. For runtime claims, use a matched CPU/GPU comparison; the reported 15.4-second suite runtime alone does not establish a speedup.
 
-The overview's separate Supporting Analysis A reports 1,000 randomized trials: Delta detection 100.0%, mean lead 406 steps and median lead 320 steps; variance detection 3.2%, mean and median lead 103 steps. This is now recorded as REPORTED_SYNTHETIC_SUCCESS in [the benchmark register](../../evidence/benchmark-register.csv). It is separate from the HBI v0.4.1 control benchmark. The original implementation, seeds, trial-level outputs and predeclared pass criteria still require recovery; this update adds the historical result without claiming a fresh execution or independently verified formal pass.
+Historical NASA Experiment 08 is a separate FD001 study. Its baseline construction and near-initialization alerts are under review and should remain separate from the archived FD002–FD004 comparison package.

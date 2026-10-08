@@ -1,5 +1,7 @@
 # The Coherence Engine™: ECG arrhythmia research
 
+Explore physiological-signal detection as a research application. This package provides the historical 39-record summary and a path to patient-level, event-matched review.
+
 Status: **PRELIMINARY_REQUIRES_REPLICATION**. Prepared October 7, 2026.
 
 ## Preserved evidence
@@ -14,7 +16,7 @@ Recover exact record inclusion/exclusion list, subject identities, annotations, 
 
 Record and patient mapping; all exclusions; original scored outputs; annotation mapping; frozen event matching and protocol; engine artifact.
 
-Use [the shared reviewer report](../REVIEWER_REPORT.md). No outside reviewer has executed this new public package. No engine source, internal operators, equations or private thresholds are released.
+Use [the shared reviewer report](../REVIEWER_REPORT.md) to document independent review. Outside execution review is pending; protected implementation artifacts require controlled access.
 
 ## Sources
 

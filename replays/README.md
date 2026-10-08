@@ -2,7 +2,7 @@
 
 ### [Open the live interactive benchmark viewer](https://delta72-investor-research-atlas.allialli05.chatgpt.site/replays.html)
 
-This addition provides original HBI simulation outputs, a local Scania saved-model replay receipt, six hash-pinned NASA aggregate CSVs and a standalone output viewer. It does not substitute synthetic models for real-dataset benchmarks.
+Explore how routing decisions, control trajectories, and predictive comparisons differ across tested implementations. The suite provides original HBI simulation outputs, a local Scania saved-model replay receipt, six hash-pinned NASA aggregate CSVs, and interactive comparison views. Each view identifies whether it represents simulation, archived real-data outputs, or historical summaries.
 
 ## Run public checks
 

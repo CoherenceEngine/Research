@@ -1,19 +1,31 @@
-# Publication scope
+# Publication scope and ownership
 
-This release contains selected result summaries, general evaluation guidance, and explicit evidence limits. Author: Allison Hensgen. Publication date: October 7, 2026.
+## Public evidence, protected core
 
-The engine source, proprietary equations and operators, internal thresholds, domain-adapter implementations, unpublished manuscripts, patent dossiers, and confidential partner records are excluded.
+This repository gives researchers, technical partners, and prospective investors a way to inspect documented results from The Coherence Engine™ and plan a scoped evaluation.
 
-The public files do not convey the proprietary implementation or enable an end-to-end engine replay. They have been inspected for direct implementation disclosure; this is not a patent-attorney clearance or a guarantee against inference from public results.
+Published materials include selected evidence summaries, decision-ledger audits, archived output CSVs, simulation outputs, interactive views, and evaluation protocols. Author: Allison Hensgen. Initial publication: October 7, 2026.
 
-Copyright © 2026 Allison Hensgen. All rights reserved unless a specific file is separately licensed. Public availability does not grant a blanket open-source, trademark, or patent license. The Coherence Engine™ name identifies the author's technology.
+## Core IP and controlled access
 
-No grant award, foundation endorsement, clinical authorization, NASA endorsement, or deployment agreement is asserted. This repository alone is not an open-source engine or a completed open-source grant deliverable.
+The core engine implementation, proprietary equations and operators, internal thresholds, domain-adapter source, unpublished manuscripts, patent dossiers, and confidential partner records remain controlled. Public output audits can be run from this repository; end-to-end engine execution requires separately authorized artifacts.
 
-## Scania audit addition
+## Licensing
 
-The validation/scania_v1/ directory adds a decision-only ledger and executable audit. Its audit.py and test_audit.py are licensed under the scoped MIT LICENSE in that directory. The remaining repository does not receive a blanket open-source license. Probability columns and the proprietary engine are excluded. The local arithmetic audit passed; external reviewer execution remains pending.
+Copyright © 2026 Allison Hensgen. All rights reserved unless a specific file is separately licensed.
 
-## Expanded portfolio addition
+- `validation/audit.py` and `validation/test_audit.py` use the scoped MIT license in `validation/LICENSE`.
+- `validation/scania_v1/audit.py` and `validation/scania_v1/test_audit.py` use the scoped MIT license in that directory.
+- Other documentation, data, code, engine IP, trademarks, and patent rights remain subject to their stated terms. Public availability does not grant a blanket license.
 
-The validation/ portfolio adds historical NASA receipt hashes, HBI rounded simulation means, nine-model aggregate outcomes, preliminary fraud/ECG summaries and a UCI ground-truth recovery protocol. validation/audit.py and validation/test_audit.py use validation/LICENSE, scoped MIT. No other code, evidence or protected engine receives that license. Research branches retain synthetic failures and exploratory observations separately. No new outside engine replication is established.
+The Coherence Engine™ identifies Allison Hensgen’s technology.
+
+## Evidence and representation
+
+Each evaluation states its implementation, dataset, result, and review scope. Simulated energy, recorded routing, and physical measurements are presented separately. Third-party execution receipts should identify the reviewer and artifacts actually executed.
+
+Dataset use does not imply provider endorsement. Clinical authorization, deployed outcomes, and grant-deliverable status require their own records. Public release is not a patent-attorney clearance.
+
+## Collaboration
+
+[Discuss an evaluation, controlled review, or commercial pilot](mailto:CoherenceDashboard@gmail.com?subject=The%20Coherence%20Engine%20Controlled%20Review)

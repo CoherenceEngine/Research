@@ -1,5 +1,7 @@
 # The Coherence Engine™: independent validation package, Scania v1
 
+Explore a concrete routing result: 13,708 of 16,000 heavy-model calls avoided in the recorded workflow, false positives reduced from 841 to 740, and missed failures unchanged at six. The public auditor lets you inspect the decision arithmetic; a local saved-model replay also matched every archived decision.
+
 This package enables a third party to independently audit archived classification decisions. It is the first stage of validation, not a new engine performance test.
 
 ## Run, Python 3.9 or later, no external dependencies

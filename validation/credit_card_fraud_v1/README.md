@@ -1,5 +1,7 @@
 # The Coherence Engine™: Credit-card fraud
 
+Explore a historical fraud-detection comparison and the protocol needed to establish its operational value. The historical summary and the recovered chronological development audit are distinct studies.
+
 Status: **PRIOR_RESULT_REQUIRES_REPLICATION**. Prepared October 7, 2026.
 
 ## Preserved evidence
@@ -14,7 +16,7 @@ Recover the exact canonical data, split membership, preprocessing and test outpu
 
 Original row-level outputs; class labels and row mapping; frozen split/threshold selection; baseline artifacts; exact data and engine versions.
 
-Use [the shared reviewer report](../REVIEWER_REPORT.md). No outside reviewer has executed this new public package. No engine source, internal operators, equations or private thresholds are released.
+Use [the shared reviewer report](../REVIEWER_REPORT.md) to document independent review. Outside execution review is pending; protected implementation artifacts require controlled access.
 
 ## Source-scope check
 

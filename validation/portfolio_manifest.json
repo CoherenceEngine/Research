@@ -40,24 +40,24 @@
     }
   ],
   "files": {
-    "research/historical_experiments/README.md": "30bceec2515690d63cc0285e4ada99294f536e2ceefec9d264e485f7149f0116",
-    "research/mathematical_extensions/README.md": "cf4a168e846d6e32156a3daddb23499b464265bfcac428ccff7685843f458cc5",
+    "research/historical_experiments/README.md": "aa426fcba1822e4b251d5dd8942c4d8b16cbadb73765541e6ea999a944d98e29",
+    "research/mathematical_extensions/README.md": "3e9fbad503c1b2296c15f77d8d4980b6e8a683868de6ea14f2584c3d1fc7e473",
     "validation/LICENSE": "55f31031096a7f71f795e90005d2d4cd9f8ec46ab4e6d72cdf47481ec872a689",
-    "validation/README.md": "53770f73e918f9b1b8888e30837eb11d0c27cdd403a18be99fa9a94f5f954197",
+    "validation/README.md": "be5a2b25f21084bf7cc783c3c37ff1f6b9d3df81c5c72b9ccb5022cc9d6b5594",
     "validation/REVIEWER_REPORT.md": "451246935d4b8ec7237d0dfa06217f1584197ee346e34a749a320e828e5d5806",
     "validation/audit.py": "91df005e51e5fb736fc41b04252c57859c78385fe63cd4047743f1a652cee842",
-    "validation/credit_card_fraud_v1/README.md": "283161136a633ace7654da2cd88c0432e684236565833b2b9ee578c47b34c984",
+    "validation/credit_card_fraud_v1/README.md": "20bb096e78a9db56753cbe65ad7fcbfff5eda368de328e3f837cc0d87c29c0c8",
     "validation/credit_card_fraud_v1/reference_summary.json": "41e5245cf7d1fa7f7491bdd8fcd475247df3d3ab50aebe5f70cdac36751c963d",
-    "validation/ecg_v1/README.md": "2ffaeba1a86539d17842b76ccdade6a64f7671c06e1914ca8aeed43f9806adbd",
+    "validation/ecg_v1/README.md": "77323c6d1288fa3b44bc9825c4677c64f6ee2b92f04b7bce7ec1ea8a351e1cfb",
     "validation/ecg_v1/reference_summary.json": "970b13a67fef50c0f25b5ff1b1cda62847a0193d89d8b84089ebfd5bbd08149c",
-    "validation/hbi_v0_4_1/README.md": "b73a3178436a4a8a70cf1a0f8a2a9e83b4dc8c95d4197597c68bfb828a433f1a",
+    "validation/hbi_v0_4_1/README.md": "8a4f7be63dd539a63dc50b13615d4a8f3a2f0d8dcbf5b0d6ad90430c1d66846e",
     "validation/hbi_v0_4_1/reference_summary.json": "90f4d007c5e2e13249dc495fc96677f3054875c02c5e6f93251ff1515b05fd4b",
-    "validation/model_families_v1/README.md": "fd5cbc41e8a441fa8852ed6dbbe36a3f191ef7641557d1401f563bb487d7cc25",
+    "validation/model_families_v1/README.md": "65b27ac37495d0a9e6a4a3cbbb8f1a0a0c2c1b28b2a79007f6da46e6dac4309e",
     "validation/model_families_v1/aggregate_results.csv": "d4ddaab195e3dcdd0d732efff67fc2a92c7e0e3e261ff0ed1da7fbfc910c34fa",
-    "validation/nasa_fd002_fd004_v1/README.md": "7912e5cf4117ff938c734097c14420cabad455fe0086bf819e01a4c675d48ee2",
+    "validation/nasa_fd002_fd004_v1/README.md": "16420957c12f71ccbca7ab2231993bbfe02e695b3c627ab54a7d9fbd71776751",
     "validation/nasa_fd002_fd004_v1/reference_receipt.json": "c39f35fcf2a3bdd4066dd041ed398f61a9b22575f18ca1cbdcf7ed262a2f33fc",
     "validation/test_audit.py": "d7549a924efbe2f032a0693ce5e8aa713f46ef15d9c991fe0438cf9e607b7375",
-    "validation/uci_power_v1/README.md": "2c0c0ac96375acdc084f974cb3e95258f44bd1b1b2e6b149d92bf4fe15cc47b5"
+    "validation/uci_power_v1/README.md": "1c40839611fb122a79182fc9ebdd4835a5c363d3b736d8555d4890dae78d3422"
   },
   "source_records": [
     {
@@ -128,5 +128,6 @@
     }
   ],
   "replay_recovery_update": "2026-10-07: see replays/manifest.json; local HBI and Scania execution, NASA archived-output hash recovery.",
-  "integrity_refresh_note": "2026-10-08: Updated only historical_experiments/README.md hash after the documented Monte Carlo summary addition. All other 17 existing hashes verified unchanged."
+  "integrity_refresh_note": "2026-10-08: Updated only historical_experiments/README.md hash after the documented Monte Carlo summary addition. All other 17 existing hashes verified unchanged.",
+  "documentation_refresh": "2026-10-08: Reader-facing copy and current artifact availability updated; numerical evidence and source identities unchanged."
 }

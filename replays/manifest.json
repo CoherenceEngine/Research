@@ -7,7 +7,7 @@
     "track_views.js": "28ad02b7f7d176e003184b2934a92daeac629cd784c9cbda5190dd620e3c2fe1",
     "decode_viewer_data.py": "706cd8437aefe3988d4d224e65f6ed4a2dadc0b2e7d8c9eb8b1d1ab442ea3239",
     "scania_decisions.json.gz.b64": "f519854fa712000af1228119eefbaffdeb531d63d4053ba95529a096897db385",
-    "README.md": "7d7e1f1dbbaaab8dae61a345bbecfb27866449b9288f25afe19267bf2b69896a",
+    "README.md": "1200c9484977852603471088adc2f135e1e5e6f2a389c23fe0173444c229902e",
     "track_recovery_receipt.json": "20a8b99bacd6c8a544a5fcf6a0d2f2479d6e768599ac6e7bd08e53ea30b4f332",
     "scania_local_replay_receipt.json": "98eecfc12aa58f3d09dfad65de96a7c2399a9c05b5bb76ae3ad020f3b992422c",
     "optical_evidence.json": "ea9c85093b168b0fa43143869f6a895a78030514ac19e8f4d7a5d338236e8cc8",
@@ -27,5 +27,6 @@
     "viewer.html": "8d9329f399c3ee181b59faeefad0755e11ae56d806b280bb31bbcf2c37142b5e",
     "hbi_trajectories.json.gz.b64": "4622e70bc7a2f67ed12108fba513628a9ca9aefe933c7a919b8ee0a6320df972",
     "nasa_CMAPSS_FD002_external_results_v1.csv": "3b11dde90af6badbf0e2ea7f47da6d59b78a98046f89f50867c5af26316765bb"
-  }
+  },
+  "documentation_refresh": "2026-10-08: Reader-facing copy and current artifact availability updated; numerical evidence and source identities unchanged."
 }

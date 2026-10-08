@@ -1,25 +1,34 @@
 # The Coherence Engine™ validation portfolio
 
-Start with each package README and its status. This portfolio distinguishes public arithmetic checks from protected engine execution and outside review.
+## Find the evidence that answers your question
 
-| Package | Public review available | Execution replication gap |
+Explore documented routing benefits, modeled control outcomes, predictive comparisons, and physiological-signal research. Each package connects a reported result to the checks available today and the next step for independent review.
+
+| Package | Evidence available today | Next review step |
 |---|---|---|
-| [Scania](scania_v1/README.md) | 16,000-row decision ledger audit | Frozen-artifact execution and outside receipt |
-| [NASA](nasa_fd002_fd004_v1/README.md) | Archived receipt and optional exact CSV hash checks | Original CSVs, scripts, data and authorized artifact |
-| [HBI](hbi_v0_4_1/README.md) | Rounded-summary arithmetic | Paired simulation ledgers and simulator |
-| [Model families](model_families_v1/README.md) | 18 aggregate rows, nine operational gates | Nine model bundles and decision ledgers |
-| [Fraud](credit_card_fraud_v1/README.md) | Historical result summary and review protocol | Split, predictions and evaluator |
-| [ECG](ecg_v1/README.md) | Preliminary summary and leakage/event review protocol | Patient mapping, scored outputs and exclusions |
-| [UCI Power](uci_power_v1/README.md) | Ground-truth recovery protocol | Frozen labeled event inventory |
+| [Scania](scania_v1/README.md) | 16,000-row ledger audit; locally matched saved-model decisions | Controlled reviewer replay and source-data provenance |
+| [NASA](nasa_fd002_fd004_v1/README.md) | Six recovered, hash-verified CSVs and archived receipt | Original scripts, data, environment, and authorized execution artifacts |
+| [HBI](hbi_v0_4_1/README.md) | 144 paired rows for 72 scenarios; byte-identical local simulator reproduction | Controlled independent simulator execution |
+| [Model families](model_families_v1/README.md) | 18 aggregate rows; eight of nine configurations meet operational gates | Nine model bundles and paired decision ledgers |
+| [Fraud](credit_card_fraud_v1/README.md) | Historical summary and distinct recovered development audit | Resolve split, event units, predictions, and evaluator |
+| [ECG](ecg_v1/README.md) | Preliminary 39-record summary and separate cardiac-adapted comparison | Patient mapping, scored outputs, and exclusions |
+| [UCI Power](uci_power_v1/README.md) | Historical structural observations and monthly comparison views | Independently labeled event inventory |
 
-Run `python validation/audit.py all` from the repository root, using Python 3.10 or later and no third-party dependencies. This checks file integrity and available arithmetic. It does not run the engine. NASA without canonical CSVs explicitly reports missing outputs.
+## Run the checks
 
-For original NASA outputs: `python validation/audit.py nasa --artifacts /path/to/canonical_csvs`.
+```sh
+python validation/audit.py all
+python replays/check_replays.py
+```
 
-Use [REVIEWER_REPORT.md](REVIEWER_REPORT.md) to document the actual scope of outside review. [Mathematical extensions](../research/mathematical_extensions/README.md) remain separate. Original experiments 1–5 are historical exploration, not five new validation passes; see [historical experiments](../research/historical_experiments/README.md).
+Python 3.10 or later, no third-party dependencies. These commands check public file integrity, aggregate arithmetic, and archived replay outputs. They do not execute the protected engine.
 
-The source register is a historical snapshot. Later protocols do not overwrite earlier failures, including the optical negative result. No blanket open-source license applies; `audit.py` and `test_audit.py` alone use the scoped MIT license in LICENSE.
+The initial NASA auditor accepts original filenames via `python validation/audit.py nasa --artifacts PATH`. Recovered copies in `replays/` have a `nasa_` prefix and are verified by the replay checker.
 
-## October 7 replay recovery update
+## Review with a defined scope
 
-[Replay suite](../replays/README.md): HBI simulator rerun matched both archived output files, and Scania saved-model replay matched all 16,000 decisions. NASA's six canonical CSVs are now recovered under replays/ and match their receipt hashes; no NASA engine execution was performed in this addition. The earlier inventory above describes the initial package. New recovery details are in the suite README. Outside reviewer execution remains pending.
+Use [the reviewer report](REVIEWER_REPORT.md) to record what you inspected or executed. Local reproduction and outside reviewer execution are separate statuses. Each package identifies its remaining artifacts and protocol questions.
+
+[Explore replay outputs](../replays/README.md) · [Historical experiments](../research/historical_experiments/README.md) · [Mathematical research](../research/mathematical_extensions/README.md) · [Discuss a review](mailto:CoherenceDashboard@gmail.com?subject=The%20Coherence%20Engine%20Independent%20Review)
+
+Licensing is file-specific; see [publication scope](../PUBLICATION_SCOPE.md).

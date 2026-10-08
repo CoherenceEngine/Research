@@ -1,18 +1,18 @@
 # The Coherence Engine™: HBI v0.4.1 control simulation
 
-Status: **SUMMARY_ARITHMETIC_ONLY**. Prepared October 7, 2026.
+Status: **SIMULATION_PASS / LOCAL_BYTE_EXACT_REPRODUCTION**. Public case-level outputs available; outside execution review pending.
 
-## Preserved evidence
+## Modeled control benefit
 
 Prior locked 72-case simulation: both policies survived 72/72 cases with zero violations. Rounded mean modeled energy: 80.230 vs 63.997; command events: 47.986 vs 5.764; active steps: 47.653 vs 18.361. Approximate reported reductions: 20.2%, 88.0%, 61.5%. These are modeled simulation outcomes.
 
 ## Reviewer procedure
 
-Use audit.py hbi to recompute reductions from rounded means. For simulation reproduction, recover case-level outputs, simulator/version, trial seeds, initial conditions, disturbances, Bellman comparator and protected controller. Freeze all before execution. Check paired case identity, survival, violations and distributions, not only means.
+Use `python replays/check_replays.py` to verify released paired rows and summaries. Use `python validation/audit.py hbi` for rounded-summary arithmetic. For independent simulation execution, obtain controlled access to the original simulator, locked manifest, seeds, disturbances, comparator, and controller. Freeze all before execution. Check paired case identity, survival, violations and distributions, not only means.
 
 ## Required before execution replication
 
-72 paired trial ledgers; simulator; seeds and disturbance schedule; frozen policy artifacts; cost model and original criteria.
+The 144 paired policy rows are public in `replays/hbi_per_scenario.csv`. Independent execution requires the simulator, locked case manifest, disturbance schedule, frozen policies, and original criteria.
 
 Use [the shared reviewer report](../REVIEWER_REPORT.md). No outside reviewer has executed this new public package. No engine source, internal operators, equations or private thresholds are released.
 
@@ -24,4 +24,4 @@ Source repository paths and immutable Git blob identifiers are recorded in [port
 
 ## Simulation recovery update, October 7, 2026
 
-The original simulator and locked manifest were recovered and rerun unchanged. The 144 paired policy rows and summary matched archived bytes exactly; eight original tests passed. Outputs are in [replays/](../../replays/README.md), executable controller source is in the private Validation-Private/replays_v1 package. The simulator uses benchmark proxy operators rather than the protected engine equations. This supersedes the summary-only availability above. It remains synthetic simulation and local reproduction, with no new independent reviewer or physical-energy claim.
+The original simulator and locked manifest were recovered and rerun unchanged. The 144 paired policy rows and summary matched archived bytes exactly; eight original tests passed. Outputs are in [replays/](../../replays/README.md), executable controller source is in the private Validation-Private/replays_v1 package. The simulator uses benchmark proxy operators rather than the protected engine equations. The current package therefore supports case-level output review. It remains synthetic simulation and local reproduction, with no new independent reviewer or physical-energy claim.
