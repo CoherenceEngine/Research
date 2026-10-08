@@ -40,7 +40,7 @@
     }
   ],
   "files": {
-    "research/historical_experiments/README.md": "93702610f4ff009595a1f0a468f204eb12418b27ec6e9d72118145771479c69e",
+    "research/historical_experiments/README.md": "30bceec2515690d63cc0285e4ada99294f536e2ceefec9d264e485f7149f0116",
     "research/mathematical_extensions/README.md": "cf4a168e846d6e32156a3daddb23499b464265bfcac428ccff7685843f458cc5",
     "validation/LICENSE": "55f31031096a7f71f795e90005d2d4cd9f8ec46ab4e6d72cdf47481ec872a689",
     "validation/README.md": "53770f73e918f9b1b8888e30837eb11d0c27cdd403a18be99fa9a94f5f954197",
@@ -127,5 +127,6 @@
       "html_sha256": "3e25c4d955f3f51a1c297bfa21d7d37acbba979b12d78231c2ea52cc8cd568a3"
     }
   ],
-  "replay_recovery_update": "2026-10-07: see replays/manifest.json; local HBI and Scania execution, NASA archived-output hash recovery."
+  "replay_recovery_update": "2026-10-07: see replays/manifest.json; local HBI and Scania execution, NASA archived-output hash recovery.",
+  "integrity_refresh_note": "2026-10-08: Updated only historical_experiments/README.md hash after the documented Monte Carlo summary addition. All other 17 existing hashes verified unchanged."
 }
