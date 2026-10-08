@@ -26,7 +26,7 @@ The Coherence Engine™ is an implemented computational system developed to inve
 
 Results are specific to the named implementation, dataset, and test. A development pass is not an independent holdout pass. Detection sensitivity does not establish operational usefulness when alert burden is excessive. Failed gates and partial tests are retained.
 
-The register is a selected historical snapshot, not a complete or current inventory of all research. Campaign entries reflect the September 27, 2026 source record; the optical entry reflects October 6, 2026. Later branches may have separate outcomes and must not overwrite these records.
+The register preserves the original historical records and now includes the reviewed NASA, HBI, model-family, fraud, ECG and UCI Power packages. Performance status and reproduction status are separate: HBI passes its simulation criteria, eight of nine model configurations pass their operational gates, NASA PASS_EXACT concerns reproduction, and preliminary or unscored tracks retain their current status. Scania's Extra Trees result overlaps the model-family study and should not be counted twice as independent evidence. This remains a selected register, not a complete inventory of every later research branch.
 
 ## Research and commercial boundaries
 
