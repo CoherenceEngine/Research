@@ -12,6 +12,7 @@ The Coherence Engine™ is Allison Hensgen’s implemented computational technol
 
 | Evaluation | Documented result | Explore |
 |---|---|---|
+| UCI hydraulic pump-leak fusion, retrospective | AUROC 0.757 vs EWMA 0.640; at 5% calibration-block alert budget, 16/45 vs 8/45 positive blocks detected, both 0/43 negative blocks alerted; low recall and independent review pending | [Hydraulic diagnostic evidence](validation/hydraulic_pump_fusion_v1/README.md) |
 | Scania APS, 16,000 records | 85.7% fewer recorded heavy-model calls; false positives 841 → 740; missed failures unchanged at six | [Decision-ledger audit](validation/scania_v1/README.md) |
 | HBI v0.4.1, 72 simulated cases | About 20.2% lower modeled energy, 88.0% fewer commands, 61.5% fewer active steps; both policies survived all cases with zero violations | [Simulation evidence](validation/hbi_v0_4_1/README.md) |
 | Nine Scania model configurations | Eight meet the registered operational gates | [Model comparison](validation/model_families_v1/README.md) |
