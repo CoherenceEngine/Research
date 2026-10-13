@@ -1,0 +1,10 @@
+metric,ewma,fusion,note
+pump_leak_AUROC,0.640147,0.756909,paired_880_heldout_cycles
+paired_AUROC_difference,0,0.116762,5000_block_bootstrap_resamples
+AUROC_difference_CI_lower_95,0,0.044865,nominal_10_cycle_block_CI
+AUROC_difference_CI_upper_95,0,0.194358,nominal_10_cycle_block_CI
+detected_positive_blocks,8,16,of_45_positive_blocks
+missed_positive_blocks,37,29,of_45_positive_blocks
+false_positive_blocks,0,0,of_43_pump_leak_negative_blocks
+block_recall,0.177778,0.355556,retrospective_threshold_audit
+regime_aware_pump_leak_AUROC,0.566799,0.619853,regime_adapter_failed_to_improve
