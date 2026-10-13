@@ -6,6 +6,7 @@ Explore documented routing benefits, modeled control outcomes, predictive compar
 
 | Package | Evidence available today | Next review step |
 |---|---|---|
+| [Hydraulic pump fusion](hydraulic_pump_fusion_v1/README.md) | Retrospective pump-leak AUROC 0.757 vs EWMA 0.640; 16/45 vs 8/45 positive blocks flagged in the calibrated alarm audit; regime-aware adapter underperformed | Independent machine/dataset with prospective locked threshold and falsification protocol |
 | [Scania](scania_v1/README.md) | 16,000-row ledger audit; locally matched saved-model decisions | Controlled reviewer replay and source-data provenance |
 | [NASA](nasa_fd002_fd004_v1/README.md) | Six recovered, hash-verified CSVs and archived receipt | Original scripts, data, environment, and authorized execution artifacts |
 | [HBI](hbi_v0_4_1/README.md) | 144 paired rows for 72 scenarios; byte-identical local simulator reproduction | Controlled independent simulator execution |
